@@ -218,7 +218,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
     overflow: hidden;
 }
 
@@ -242,13 +242,22 @@ img {
 .nossos-servicos h3 {
     color: rgb(6, 54, 67);
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .servicos-container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
     max-width: 1100px;
+    width: 100%;
+}
+
+.servico-card {
+    background-color: #c9e8ee;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .servico {
@@ -257,10 +266,6 @@ img {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    background-color: #c9e8ee;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .servico img {
@@ -268,12 +273,24 @@ img {
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
-.servico p {
+.servico-texto {
     flex: 1;
+    max-width: 600px;
+}
+
+.servico-texto h4 {
+    color: rgb(6, 54, 67);
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.servico-texto p {
     font-size: 17px;
     color: #05353f;
     line-height: 1.6;
-    max-width: 600px;
+    margin: 0;
 }
