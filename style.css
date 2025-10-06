@@ -174,7 +174,7 @@ img {
 /* ======== QUEM SOMOS ======== */
 .quem-somos {
     background-color: #c8e9ef; /* fundo sólido */
-    background-image: url("pataUNECT.png"); /* imagem da pata */
+    background-image: url("icone.png"); /* imagem da pata */
     background-repeat: repeat;
     background-size: 75px;
     background-position: center;
@@ -232,20 +232,20 @@ img {
     max-width: 700px;
 }
 
-/* ======== NOSSOS SERVIÇOS ======== */
+
 .nossos-servicos {
-    background-color: #bde3ea; /* fundo sólido */
-    background-image: url("pataUNECT.png"); /* imagem da pata */
+    background-color: #bde3ea; 
+    background-image: url("pataUNECT.png"); 
     background-repeat: repeat;
     background-size: 75px;
     background-position: center;
-    background-blend-mode: lighten; /* mistura leve */
+    background-blend-mode: lighten; 
     position: relative;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
 }
 
 .nossos-servicos::before {
