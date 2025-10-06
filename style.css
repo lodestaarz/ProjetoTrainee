@@ -236,12 +236,35 @@ img {
     z-index: 0;
 }
 
-.servicos-superior > * {
+.servicos-inferior {
+    background-color: #c8e9ef;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos-inferior::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.servicos-superior > *,
+.servicos-inferior > * {
     position: relative;
     z-index: 1;
 }
 
-.servicos-superior .conteudo {
+.servicos-superior .conteudo,
+.servicos-inferior .conteudo {
     max-width: 1200px;
     width: 100%;
 }
@@ -266,10 +289,6 @@ img {
     gap: 50px;
     max-width: 1000px;
     width: 100%;
-}
-
-.servico-item:nth-child(even) {
-    flex-direction: row-reverse;
 }
 
 .servico-item img {
@@ -297,22 +316,4 @@ img {
     font-size: 17px;
     line-height: 1.6;
     margin: 0;
-}
-
-.servicos-inferior {
-    background-color: #c8e9ef;
-    height: 100px;
-    position: relative;
-}
-
-.servicos-inferior::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("pataUNECT.png");
-    background-repeat: repeat;
-    background-size: 75px;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
 }
