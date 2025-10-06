@@ -1,1 +1,279 @@
-body { font-family: Arial, Helvetica, sans-serif; background-color: #E2F5FA; margin: 0; padding: 0; } /* ======== CABEÇALHO ======== */ .cabeçalho { display: flex; justify-content: space-between; align-items: center; padding: 40px 300px; } .iconeTexto { display: flex; gap: 15px; color: rgb(6, 54, 67); font-weight: bolder; } .menu { display: flex; gap: 30px; } .menu a { text-decoration: none; color: rgb(6, 54, 67); font-weight: bold; padding: 15px 0; } img { width: 50px; height: 50px; } /* ======== BANNER ======== */ .banner { display: flex; justify-content: center; background-color: #f8fdfd; padding: 60px 40px; border-radius: 15px; margin: 20px auto; width: 80%; max-width: 1200px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); } .bannerConteudo { width: 100%; } .textoImagem { display: flex; justify-content: space-between; align-items: center; gap: 40px; } .textoContent { flex: 1; } .textoContent h2 { font-size: 32px; color: rgb(6, 54, 67); margin-bottom: 30px; line-height: 1.3; } .textoImagem img { height: 200px; width: 400px; object-fit: contain; } .btn { display: inline-block; padding: 15px 30px; background-color: rgb(6, 54, 67); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: 0.3s; } .btn:hover { background-color: rgb(10, 90, 110); } /* ======== CAMPANHA ======== */ .campanha { display: flex; justify-content: center; margin: 40px auto; width: 80%; max-width: 1200px; } .card { display: flex; align-items: center; background-color: #c9e8ee; border-radius: 15px; padding: 25px 40px; width: 100%; gap: 30px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); } .cardEsquerda { flex-shrink: 0; } .cardEsquerda img { width: 80px; height: 80px; object-fit: contain; } .cardCentro { flex: 1; text-align: center; padding: 0 20px; } .cardCentro h3 { font-size: 24px; color: rgb(6, 54, 67); margin-bottom: 10px; font-weight: bold; } .cardCentro p { margin-bottom: 20px; color: #333; font-size: 16px; } .btnCampanha { display: inline-block; padding: 12px 25px; background-color: white; color: rgb(6, 54, 67); text-decoration: none; border-radius: 8px; font-weight: bold; border: 2px solid rgb(6, 54, 67); font-size: 16px; transition: 0.3s; } .btnCampanha:hover { background-color: rgb(6, 54, 67); color: white; } .cardDireita { flex-shrink: 0; } .cardDireita img { width: 120px; height: 120px; object-fit: contain; } /* ======== QUEM SOMOS ======== */ .quem-somos { background-color: #c8e9ef; background-image: url("icone.png"); background-repeat: repeat; background-size: 75px; background-position: center; background-blend-mode: lighten; position: relative; padding: 60px 20px; display: flex; justify-content: center; text-align: center; } .quem-somos::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("pataUNECT.png"); background-repeat: repeat; background-size: 75px; background-position: center; opacity: 0.2; /* intensidade do padrão */ z-index: 0; } .quem-somos > * { position: relative; z-index: 1; } .quem-somos .conteudo { max-width: 1000px; display: flex; flex-direction: column; align-items: center; gap: 25px; } .quem-somos .logoQuemSomos { width: 120px; height: auto; } .quem-somos .texto h3 { color: rgb(6, 54, 67); font-size: 24px; margin-bottom: 15px; } .quem-somos .texto p { color: #05353f; font-size: 17px; line-height: 1.6; max-width: 700px; } .nossos-servicos { background-color: #52cce2; background-image: url("pataUNECT.png"); background-repeat: repeat; background-size: 75px; background-position: center; background-blend-mode: lighten; position: relative; padding: 60px 20px; display: flex; flex-direction: column; align-items: center; gap: 80px; } .nossos-servicos::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url("pataUNECT.png"); background-repeat: repeat; background-size: 75px; background-position: center; opacity: 0.2; /* intensidade do padrão */ z-index: 0; } .nossos-servicos > * { position: relative; z-index: 1; } .nossos-servicos h3 { color: rgb(6, 54, 67); font-size: 24px; } .servicos-container { display: flex; flex-direction: column; gap: 60px; max-width: 1000px; } .servico { display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; } .servico img { width: 250px; height: 200px; border-radius: 10px; object-fit: cover; } .servico p { flex: 1; font-size: 17px; color: #05353f; line-height: 1.6; max-width: 600px; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E2F5FA;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 300px;
+}
+
+.iconeTexto {
+    display: flex;
+    gap: 15px;
+    color: rgb(6, 54, 67);
+    font-weight: bolder;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(6, 54, 67);
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+/* ======== BANNER ======== */
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #f8fdfd;
+    padding: 60px 40px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bannerConteudo {
+    width: 100%;
+}
+
+.textoImagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.textoContent {
+    flex: 1;
+}
+
+.textoContent h2 {
+    font-size: 32px;
+    color: rgb(6, 54, 67);
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.textoImagem img {
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(6, 54, 67);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(10, 90, 110);
+}
+
+/* ======== CAMPANHA ======== */
+.campanha {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #c9e8ee;
+    border-radius: 15px;
+    padding: 25px 40px;
+    width: 100%;
+    gap: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardEsquerda img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cardCentro {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.cardCentro h3 {
+    font-size: 24px;
+    color: rgb(6, 54, 67);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cardCentro p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+}
+
+.btnCampanha {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: rgb(6, 54, 67);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid rgb(6, 54, 67);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btnCampanha:hover {
+    background-color: rgb(6, 54, 67);
+    color: white;
+}
+
+/* ======== QUEM SOMOS ======== */
+.quem-somos {
+    background-color: #c8e9ef;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.quem-somos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15; /* Apenas a imagem tem opacidade */
+    z-index: 0;
+}
+
+.quem-somos > * {
+    position: relative;
+    z-index: 1;
+}
+
+.quem-somos .conteudo {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.quem-somos .logoQuemSomos {
+    width: 120px;
+    height: auto;
+}
+
+.quem-somos .texto h3 {
+    color: rgb(6, 54, 67);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.quem-somos .texto p {
+    color: #05353f;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* ======== NOSSOS SERVIÇOS ======== */
+.nossos-servicos {
+    background-color: #86c4cf;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    overflow: hidden;
+}
+
+.nossos-servicos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15; /* Somente a imagem tem opacidade */
+    z-index: 0;
+}
+
+.nossos-servicos > * {
+    position: relative;
+    z-index: 1;
+}
+
+.nossos-servicos h3 {
+    color: rgb(6, 54, 67);
+    font-size: 28px;
+}
+
+.servicos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1100px;
+}
+
+.servico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #c9e8ee;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.servico img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.servico p {
+    flex: 1;
+    font-size: 17px;
+    color: #05353f;
+    line-height: 1.6;
+    max-width: 600px;
+}
