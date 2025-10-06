@@ -204,6 +204,14 @@ img {
     max-width: 700px;
 }
 
+.quem-somos,
+.nossos-servicos {
+    background-image: url("pattern.png"); /* renomeie o arquivo da imagem de padrão */
+    background-repeat: repeat;
+    background-size: 200px; /* ajuste o tamanho do padrão */
+    background-position: center;
+}
+
 .nossos-servicos {
     background-color: #bde3ea;
     padding: 60px 20px;
