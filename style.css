@@ -175,7 +175,7 @@ img {
     background-repeat: repeat;
     background-size: 75px;
     background-position: center;
-    opacity: 0.15; /* Apenas a imagem tem opacidade */
+    opacity: 0.15;
     z-index: 0;
 }
 
@@ -212,17 +212,19 @@ img {
 
 /* ======== NOSSOS SERVIÇOS ======== */
 .nossos-servicos {
+    position: relative;
+}
+
+.servicos-superior {
     background-color: #86c4cf;
     position: relative;
     padding: 60px 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    overflow: hidden;
+    justify-content: center;
+    text-align: center;
 }
 
-.nossos-servicos::before {
+.servicos-superior::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -230,67 +232,87 @@ img {
     background-repeat: repeat;
     background-size: 75px;
     background-position: center;
-    opacity: 0.15; /* Somente a imagem tem opacidade */
+    opacity: 0.15;
     z-index: 0;
 }
 
-.nossos-servicos > * {
+.servicos-superior > * {
     position: relative;
     z-index: 1;
 }
 
-.nossos-servicos h3 {
-    color: rgb(6, 54, 67);
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.servicos-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 1100px;
+.servicos-superior .conteudo {
+    max-width: 1200px;
     width: 100%;
 }
 
-.servico-card {
-    background-color: #c9e8ee;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.servicos-superior h3 {
+    color: rgb(6, 54, 67);
+    font-size: 28px;
+    margin-bottom: 50px;
 }
 
-.servico {
+.servicos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.servico-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
 }
 
-.servico img {
-    width: 250px;
-    height: 200px;
-    border-radius: 10px;
+.servico-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.servico-item img {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
     object-fit: cover;
     flex-shrink: 0;
 }
 
-.servico-texto {
+.servico-info {
     flex: 1;
-    max-width: 600px;
+    text-align: left;
 }
 
-.servico-texto h4 {
+.servico-info h4 {
     color: rgb(6, 54, 67);
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
-.servico-texto p {
-    font-size: 17px;
+.servico-info p {
     color: #05353f;
+    font-size: 17px;
     line-height: 1.6;
     margin: 0;
+}
+
+.servicos-inferior {
+    background-color: #c8e9ef;
+    height: 100px;
+    position: relative;
+}
+
+.servicos-inferior::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
 }
