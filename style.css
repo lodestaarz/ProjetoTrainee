@@ -11,6 +11,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 40px 300px;
+    background-color: white; /* Fundo branco adicionado */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    position: relative; /* Para a sombra funcionar melhor */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
 .iconeTexto {
@@ -18,6 +22,7 @@ body {
     gap: 15px;
     color: rgb(6, 54, 67);
     font-weight: bolder;
+    align-items: center; /* Garante alinhamento vertical do ícone e texto */
 }
 
 .menu {
@@ -30,13 +35,17 @@ body {
     color: rgb(6, 54, 67);
     font-weight: bold;
     padding: 15px 0;
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+.menu a:hover {
+    color: #5a8087; /* Cor do footer para manter consistência */
 }
 
 img {
     width: 50px;
     height: 50px;
 }
-
 /* ======== BANNER ======== */
 .banner {
     display: flex;
