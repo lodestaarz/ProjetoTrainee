@@ -5,16 +5,16 @@ body {
     padding: 0;
 }
 
-/* ======== CABEÇALHO ======== */
-.cabeçalho {
+/*CABECALHO*/
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 300px;
-    background-color: white; /* Fundo branco adicionado */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
-    position: relative; /* Para a sombra funcionar melhor */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    background-color: white; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    z-index: 1000;
 }
 
 .iconeTexto {
@@ -22,7 +22,7 @@ body {
     gap: 15px;
     color: rgb(6, 54, 67);
     font-weight: bolder;
-    align-items: center; /* Garante alinhamento vertical do ícone e texto */
+    align-items: center; 
 }
 
 .menu {
@@ -35,18 +35,18 @@ body {
     color: rgb(6, 54, 67);
     font-weight: bold;
     padding: 15px 0;
-    transition: color 0.3s ease; /* Transição suave para hover */
+    transition: color 0.3s ease; 
 }
 
 .menu a:hover {
-    color: #5a8087; /* Cor do footer para manter consistência */
+    color: #5a8087; 
 }
 
 img {
     width: 50px;
     height: 50px;
 }
-/* ======== BANNER ======== */
+/*BANNER*/
 .banner {
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ img {
     background-color: rgb(10, 90, 110);
 }
 
-/* ======== CAMPANHA ======== */
+/*VACINACAO*/
 .campanha {
     display: flex;
     justify-content: center;
@@ -166,7 +166,7 @@ img {
     color: white;
 }
 
-/* ======== QUEM SOMOS ======== */
+/*QUEM SOMOS*/
 .quem-somos {
     background-color: #c8e9ef;
     position: relative;
@@ -219,7 +219,7 @@ img {
     max-width: 700px;
 }
 
-/* ======== NOSSOS SERVIÇOS ======== */
+/*NOSSOS SERVICOS*/
 .nossos-servicos {
     position: relative;
 }
@@ -339,7 +339,7 @@ footer {
   text-align: center;
 }
 
-/* ======== NOSSOS PROFISSIONAIS ======== */
+/*PROFISSIONAIS*/
 
 .profissionais {
     display: flex;
@@ -402,7 +402,7 @@ footer {
     text-align: center;
 }
 
-/* ======== AVALIAÇÕES ======== */
+/*AVALIACOES*/
 
 .avaliacoes {
     display: flex;
@@ -479,7 +479,7 @@ footer {
     line-height: 1.5;
 }
 
-/* ======== CONTATO ======== */
+/*CONTATO*/
 .contato {
     background-color: #d7eef3;
     padding: 60px 20px;
