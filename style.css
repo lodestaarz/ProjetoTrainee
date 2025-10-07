@@ -577,3 +577,95 @@ footer {
 .contato-form button:hover {
     background-color: #0a4954;
 }
+
+#banner-inferior {
+    background-color: #00AEEF;
+    color: white;
+    padding: 40px 0;
+}
+
+.banner-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.banner-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.banner-logo img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.banner-logo h2 {
+    margin: 0;
+    font-size: 22px;
+    color: white;
+}
+
+.banner-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.banner-links h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.banner-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.banner-links li {
+    margin: 6px 0;
+}
+
+.banner-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.banner-links a:hover {
+    text-decoration: underline;
+}
+
+.banner-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.banner-social h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
