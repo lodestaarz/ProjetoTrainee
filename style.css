@@ -565,7 +565,7 @@ footer {
 
 .contato-form button {
     background-color: #0b5c6b;
-    color: white;
+    color: #063643;
     font-weight: bold;
     border: none;
     padding: 12px;
@@ -579,7 +579,7 @@ footer {
 }
 
 #banner-inferior {
-    background-color: #E2F5FA;
+    background-color: #ffffff;
     color: #063643;
     padding: 40px 0;
 }
@@ -609,7 +609,7 @@ footer {
 .banner-logo h2 {
     margin: 0;
     font-size: 22px;
-    color: white;
+    color: #063643;
 }
 
 .banner-links {
@@ -633,7 +633,7 @@ footer {
 
 .banner-links a {
     text-decoration: none;
-    color: white;
+    color: #063643;
     transition: 0.3s;
 }
 
@@ -661,7 +661,7 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #063643;
     padding: 5px;
     transition: transform 0.3s;
 }
