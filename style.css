@@ -1,480 +1,98 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #E2F5FA;
-    margin: 0;
-    padding: 0;
-}
-
-/* ======== CABEÇALHO ======== */
-.cabeçalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 300px;
-    background-color: white; /* Fundo branco adicionado */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
-    position: relative; /* Para a sombra funcionar melhor */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
-}
-
-.iconeTexto {
-    display: flex;
-    gap: 15px;
-    color: rgb(6, 54, 67);
-    font-weight: bolder;
-    align-items: center; /* Garante alinhamento vertical do ícone e texto */
-}
-
-.menu {
-    display: flex;
-    gap: 30px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: rgb(6, 54, 67);
-    font-weight: bold;
-    padding: 15px 0;
-    transition: color 0.3s ease; /* Transição suave para hover */
-}
-
-.menu a:hover {
-    color: #5a8087; /* Cor do footer para manter consistência */
-}
-
-img {
-    width: 50px;
-    height: 50px;
-}
-/* ======== BANNER ======== */
-.banner {
-    display: flex;
-    justify-content: center;
-    background-color: #f8fdfd;
-    padding: 60px 40px;
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 1200px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.bannerConteudo {
-    width: 100%;
-}
-
-.textoImagem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.textoContent {
-    flex: 1;
-}
-
-.textoContent h2 {
-    font-size: 32px;
-    color: rgb(6, 54, 67);
-    margin-bottom: 30px;
-    line-height: 1.3;
-}
-
-.textoImagem img {
-    height: 200px;
-    width: 400px;
-    object-fit: contain;
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: rgb(6, 54, 67);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: rgb(10, 90, 110);
-}
-
-/* ======== CAMPANHA ======== */
-.campanha {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-    width: 80%;
-    max-width: 1200px;
-}
-
-.card {
-    display: flex;
-    align-items: center;
-    background-color: #c9e8ee;
-    border-radius: 15px;
-    padding: 25px 40px;
-    width: 100%;
-    gap: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.cardEsquerda img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.cardCentro {
-    flex: 1;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.cardCentro h3 {
-    font-size: 24px;
-    color: rgb(6, 54, 67);
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.cardCentro p {
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 16px;
-}
-
-.btnCampanha {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: white;
-    color: rgb(6, 54, 67);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 2px solid rgb(6, 54, 67);
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.btnCampanha:hover {
-    background-color: rgb(6, 54, 67);
-    color: white;
-}
-
-/* ======== QUEM SOMOS ======== */
-.quem-somos {
-    background-color: #c8e9ef;
-    position: relative;
+/* ======== CONTATO ======== */
+.contato {
+    background-color: #d7eef3;
     padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.quem-somos::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("pataUNECT.png");
-    background-repeat: repeat;
-    background-size: 75px;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
-}
-
-.quem-somos > * {
-    position: relative;
-    z-index: 1;
-}
-
-.quem-somos .conteudo {
-    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
 }
 
-.quem-somos .logoQuemSomos {
-    width: 120px;
-    height: auto;
+.contato h2 {
+    font-size: 28px;
+    color: #063643;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
 }
 
-.quem-somos .texto h3 {
-    color: rgb(6, 54, 67);
-    font-size: 24px;
+.contato-container {
+    background-color: #f8fdfd;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-info h3 {
+    color: #063643;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-.quem-somos .texto p {
-    color: #05353f;
-    font-size: 17px;
-    line-height: 1.6;
-    max-width: 700px;
-}
-
-/* ======== NOSSOS SERVIÇOS ======== */
-.nossos-servicos {
-    position: relative;
-}
-
-.servicos-superior {
-    background-color: #86c4cf;
-    position: relative;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.servicos-superior::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("pataUNECT.png");
-    background-repeat: repeat;
-    background-size: 75px;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
-}
-
-.servicos-inferior {
-    background-color: #c8e9ef;
-    position: relative;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.servicos-inferior::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("pataUNECT.png");
-    background-repeat: repeat;
-    background-size: 75px;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
-}
-
-.servicos-superior > *,
-.servicos-inferior > * {
-    position: relative;
-    z-index: 1;
-}
-
-.servicos-superior .conteudo,
-.servicos-inferior .conteudo {
-    max-width: 1200px;
-    width: 100%;
-}
-
-.servicos-superior h3 {
-    color: rgb(6, 54, 67);
-    font-size: 28px;
-    margin-bottom: 50px;
-}
-
-.servicos-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-}
-
-.servico-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.servico-item img {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.servico-info {
-    flex: 1;
-    text-align: left;
-}
-
-.servico-info h4 {
-    color: rgb(6, 54, 67);
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.servico-info p {
-    color: #05353f;
-    font-size: 17px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-footer {
-  background-color: #5a8087;
-  color: #ccc;
-  padding: 1.5rem;
-  margin-top: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-/* ======== NOSSOS PROFISSIONAIS ======== */
-
-.profissionais {
-    display: flex;
-    justify-content: center;
-    margin: 60px auto;
-    width: 80%;
-    max-width: 1200px;
-}
-        
-.profissionais-container {
-    width: 100%;
-    background-color: rgb(107, 183, 203);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-        
-.profissionais-titulo {
-    font-size: 32px;
-    color: #063643;
-    margin-bottom: 40px;
-    margin-left: 25px;
-    font-weight: bold;
-    text-align: left;
-}
-        
-.profissionais-lista {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: -10px;
-    font-weight: bold;
-}
-        
-.profissional-item {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
-    text-align: center;
-}
-        
-.profissional-foto {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    margin: 0 auto 15px;
-}
-        
-.profissional-nome {
-    font-size: 18px;
-    color: #063643;
-    margin-bottom: 5px;
-    text-align: center;
-}
-        
-.profissional-especialidade {
+.contato-info p {
     font-size: 16px;
-    color: #063643;
-    text-align: center;
+    color: #05353f;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-/* ======== AVALIAÇÕES ======== */
-
-.avaliacoes {
-    display: flex;
-    justify-content: center;
-    margin: 60px auto;
-    width: 80%;
-    max-width: 1200px;
-}
-        
-.avaliacoes-container {
-    width: 100%;
-    border-radius: 15px;
-    padding: 40px;
-}
-        
-.avaliacoes-titulo {
-    font-size: 32px;
-    color: #063643;
-    margin-bottom: 40px;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 170px;
-}
-        
-.avaliacoes-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-        
-.avaliacao-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-}
-        
-.avaliacao-foto {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-        
-.avaliacao-conteudo {
-    flex: 1;
-}
-        
-.avaliacao-cabecalho {
+.contato-redes p {
+    margin: 10px 0;
     display: flex;
     align-items: center;
+    gap: 8px;
+    color: #063643;
+    font-size: 16px;
+}
+
+.contato-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin-bottom: 10px;
 }
-        
-.estrelas {
-    font-size: 18px;
-    color: #FFD700;
-    letter-spacing: 2px;
-}
-        
-.avaliacao-nome {
-    font-size: 16px;
-    color: #333;
+
+.contato-form label {
     font-weight: bold;
+    color: #063643;
 }
-        
-.avaliacao-texto {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+
+.contato-form input,
+.contato-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.contato-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contato-form button {
+    background-color: #0b5c6b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contato-form button:hover {
+    background-color: #0a4954;
 }
