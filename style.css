@@ -5,16 +5,16 @@ body {
     padding: 0;
 }
 
-/*CABECALHO*/
-.cabecalho {
+/* ======== CABEÇALHO ======== */
+.cabeçalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 300px;
-    background-color: white; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    position: relative; 
-    z-index: 1000;
+    padding: 20px 300px;
+    background-color: #F8F8FF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; 
 }
 
 .iconeTexto {
@@ -22,7 +22,7 @@ body {
     gap: 15px;
     color: rgb(6, 54, 67);
     font-weight: bolder;
-    align-items: center; 
+    align-items: center;
 }
 
 .menu {
@@ -31,28 +31,28 @@ body {
 }
 
 .menu a {
+    font-size: 24px;
     text-decoration: none;
     color: rgb(6, 54, 67);
     font-weight: bold;
     padding: 15px 0;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #5a8087; 
+    color: #5a8087;
 }
 
 img {
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 100px;
 }
-/*BANNER*/
+/* ======== BANNER ======== */
 .banner {
     display: flex;
     justify-content: center;
-    background-color: #f8fdfd;
-    padding: 60px 40px;
-    border-radius: 15px;
+    background-color: #F8F8FF;
+    border-radius: 8px;
     margin: 20px auto;
     width: 80%;
     max-width: 1200px;
@@ -66,7 +66,6 @@ img {
 .textoImagem {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 40px;
 }
 
@@ -77,25 +76,31 @@ img {
 .textoContent h2 {
     font-size: 32px;
     color: rgb(6, 54, 67);
-    margin-bottom: 30px;
     line-height: 1.3;
+    margin-right: -120px;
+    margin-left: 60px;
+    margin-top: 70px;
 }
 
 .textoImagem img {
-    height: 200px;
-    width: 400px;
+    height: 60%;
+    width: 60%;
     object-fit: contain;
+    margin-top: 220px;
+    margin-right: 75px;
 }
 
 .btn {
     display: inline-block;
-    padding: 15px 30px;
-    background-color: rgb(6, 54, 67);
+    padding: 30px 60px;
+    background-color: rgb(15, 99, 122);
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 60px;
+    font-size: 22px;
     transition: 0.3s;
 }
 
@@ -103,61 +108,60 @@ img {
     background-color: rgb(10, 90, 110);
 }
 
-/*VACINACAO*/
+/* ======== CAMPANHA ======== */
 .campanha {
     display: flex;
-    justify-content: center;
     margin: 40px auto;
     width: 80%;
     max-width: 1200px;
+    justify-content: center;
 }
 
 .card {
     display: flex;
-    align-items: center;
-    background-color: #c9e8ee;
-    border-radius: 15px;
-    padding: 25px 40px;
-    width: 100%;
+    background-color: #6BB7CB;
+    border-radius: 8px;
+    width: 85%;
     gap: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cardEsquerda img {
-    width: 80px;
-    height: 80px;
+    width: 320px;
+    height: 320px;
     object-fit: contain;
+    margin-left: 20px;
+    margin-bottom: -40px;
 }
 
-.cardCentro {
-    flex: 1;
-    text-align: center;
-    padding: 0 20px;
-}
 
 .cardCentro h3 {
-    font-size: 24px;
+    font-size: 28px;
     color: rgb(6, 54, 67);
     margin-bottom: 10px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
 .cardCentro p {
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 24px;
+    color: #0F637A;
     font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
 }
 
 .btnCampanha {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 16px 50px;
     background-color: white;
     color: rgb(6, 54, 67);
+    margin-top: 20px;
+    margin-left: 28px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 3px;
     font-weight: bold;
-    border: 2px solid rgb(6, 54, 67);
-    font-size: 16px;
+    font-size: 28px;
     transition: 0.3s;
 }
 
@@ -166,7 +170,14 @@ img {
     color: white;
 }
 
-/*QUEM SOMOS*/
+.cardDireita img {
+    width: 160px;
+    height: 210px;
+    margin-left: -20px;
+    margin-top: 80px;
+}
+
+/* ======== QUEM SOMOS ======== */
 .quem-somos {
     background-color: #c8e9ef;
     position: relative;
@@ -219,7 +230,7 @@ img {
     max-width: 700px;
 }
 
-/*NOSSOS SERVICOS*/
+/* ======== NOSSOS SERVIÇOS ======== */
 .nossos-servicos {
     position: relative;
 }
@@ -339,7 +350,7 @@ footer {
   text-align: center;
 }
 
-/*PROFISSIONAIS*/
+/* ======== NOSSOS PROFISSIONAIS ======== */
 
 .profissionais {
     display: flex;
@@ -402,7 +413,7 @@ footer {
     text-align: center;
 }
 
-/*AVALIACOES*/
+/* ======== AVALIAÇÕES ======== */
 
 .avaliacoes {
     display: flex;
@@ -479,7 +490,7 @@ footer {
     line-height: 1.5;
 }
 
-/*CONTATO*/
+/* ======== CONTATO ======== */
 .contato {
     background-color: #d7eef3;
     padding: 60px 20px;
