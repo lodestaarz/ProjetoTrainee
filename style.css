@@ -180,7 +180,7 @@ img {
 /* ======== QUEM SOMOS ======== */
 .quem-somos {
     position: relative;
-    padding: 60px 20px;
+    padding: 60px 0; 
     display: flex;
     justify-content: center;
 }
@@ -203,17 +203,18 @@ img {
 }
 
 .quem-somos .conteudo {
-    max-width: 1200px;
+    max-width: 100%; 
     width: 100%;
 }
 
-/* Banner principal com 3 sub-banners */
 .banner-principal {
     display: flex;
-    gap: 0;
+    gap: 0; 
     margin-bottom: 60px;
-    width: 100%;
+    width: 100vw; 
+    margin-left: calc(-50vw + 50%); 
     border-radius: 0;
+    border: none; 
 }
 
 .banner-item {
@@ -227,6 +228,8 @@ img {
     justify-content: center;
     position: relative;
     border-radius: 0;
+    border: none !important; 
+    margin: 0; 
 }
 
 .banner-item:first-child {
@@ -241,7 +244,6 @@ img {
     background-color: #c8e9ef;
 }
 
-/* Imagem de fundo com opacidade apenas na imagem */
 .banner-item::before {
     content: "";
     position: absolute;
@@ -278,7 +280,6 @@ img {
     max-width: 700px;
 }
 
-/* Nossos Serviços dentro da mesma section */
 .nossos-servicos {
     background-color: #86c4cf;
     padding: 40px;
@@ -294,7 +295,6 @@ img {
     border-radius: 0;
 }
 
-/* Imagem de fundo com opacidade para serviços também */
 .nossos-servicos::before,
 .servicos-inferior::before {
     content: "";
@@ -364,7 +364,6 @@ img {
     margin: 0;
 }
 
-/* Primeiro banner com layout invertido */
 .banner-item:first-child .conteudo-banner {
     display: flex;
     align-items: center;
