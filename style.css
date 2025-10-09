@@ -207,10 +207,13 @@ img {
     width: 100%;
 }
 
+/* Banner principal com 3 sub-banners */
 .banner-principal {
     display: flex;
     gap: 0;
     margin-bottom: 60px;
+    width: 100%;
+    border-radius: 0;
 }
 
 .banner-item {
@@ -223,11 +226,11 @@ img {
     min-height: 400px;
     justify-content: center;
     position: relative;
+    border-radius: 0;
 }
 
 .banner-item:first-child {
     background-color: #c8e9ef;
-    border-radius: 8px 0 0 8px;
 }
 
 .banner-item:nth-child(2) {
@@ -236,9 +239,9 @@ img {
 
 .banner-item:last-child {
     background-color: #c8e9ef;
-    border-radius: 0 8px 8px 0;
 }
 
+/* Imagem de fundo com opacidade apenas na imagem */
 .banner-item::before {
     content: "";
     position: absolute;
@@ -279,18 +282,19 @@ img {
 .nossos-servicos {
     background-color: #86c4cf;
     padding: 40px;
-    border-radius: 8px;
     margin-bottom: 40px;
     position: relative;
+    border-radius: 0;
 }
 
 .servicos-inferior {
     background-color: #c8e9ef;
     padding: 40px;
-    border-radius: 8px;
     position: relative;
+    border-radius: 0;
 }
 
+/* Imagem de fundo com opacidade para serviços também */
 .nossos-servicos::before,
 .servicos-inferior::before {
     content: "";
@@ -302,7 +306,6 @@ img {
     background-position: center;
     opacity: 0.15;
     z-index: 0;
-    border-radius: 8px;
 }
 
 .nossos-servicos > *,
@@ -361,6 +364,7 @@ img {
     margin: 0;
 }
 
+/* Primeiro banner com layout invertido */
 .banner-item:first-child .conteudo-banner {
     display: flex;
     align-items: center;
@@ -382,6 +386,8 @@ img {
     flex-shrink: 0;
     margin-bottom: 0;
 }
+
+/*///////////////*/
 
 footer {
   background-color: #5a8087;
