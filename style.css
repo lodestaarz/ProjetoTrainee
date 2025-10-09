@@ -207,8 +207,9 @@ img {
     width: 100%;
 }
 
-/* ======== BANNERS COLADOS ======== */
-.banner-principal {
+/* ======== BANNERS PARA SERVIÇOS ======== */
+.nossos-servicos,
+.servicos-inferior {
     display: flex;
     gap: 0;
     margin: 0;
@@ -217,37 +218,21 @@ img {
     margin-left: calc(-50vw + 50%);
     border-radius: 0;
     border: none;
-}
-
-.banner-item {
-    flex: 1;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     min-height: 400px;
-    justify-content: center;
     position: relative;
-    border-radius: 0;
-    border: none !important;
-    margin: 0;
 }
 
-.banner-item:first-child {
-    background-color: #c8e9ef;
-}
-
-.banner-item:nth-child(2) {
+.nossos-servicos {
     background-color: #86c4cf;
 }
 
-.banner-item:last-child {
+.servicos-inferior {
     background-color: #c8e9ef;
 }
 
-/* Imagem de fundo com opacidade apenas na imagem */
-.banner-item::before {
+/* Imagem de fundo com opacidade */
+.nossos-servicos::before,
+.servicos-inferior::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -259,9 +244,19 @@ img {
     z-index: 0;
 }
 
-.banner-item > * {
+.nossos-servicos > *,
+.servicos-inferior > * {
     position: relative;
     z-index: 1;
+}
+
+/* Container interno para conteúdo */
+.nossos-servicos .servicos-grid,
+.servicos-inferior .servicos-grid {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 /* ======== RESTANTE DO SEU CSS ORIGINAL ======== */
@@ -282,42 +277,6 @@ img {
     font-size: 17px;
     line-height: 1.6;
     max-width: 700px;
-}
-
-/* Nossos Serviços dentro da mesma section */
-.nossos-servicos {
-    background-color: #86c4cf;
-    padding: 40px;
-    margin-bottom: 40px;
-    position: relative;
-    border-radius: 0;
-}
-
-.servicos-inferior {
-    background-color: #c8e9ef;
-    padding: 40px;
-    position: relative;
-    border-radius: 0;
-}
-
-/* Imagem de fundo com opacidade para serviços também */
-.nossos-servicos::before,
-.servicos-inferior::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("fundoanimais.png");
-    background-repeat: repeat;
-    background-size: 75px;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
-}
-
-.nossos-servicos > *,
-.servicos-inferior > * {
-    position: relative;
-    z-index: 1;
 }
 
 .nossos-servicos h3 {
