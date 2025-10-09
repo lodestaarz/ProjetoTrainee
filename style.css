@@ -179,11 +179,12 @@ img {
 
 /* ======== QUEM SOMOS ======== */
 .quem-somos {
+    background-color: #c8e9ef;
     position: relative;
     padding: 60px 20px;
     display: flex;
     justify-content: center;
-    background-color: #c8e9ef;
+    text-align: center;
 }
 
 .quem-somos::before {
@@ -204,45 +205,16 @@ img {
 }
 
 .quem-somos .conteudo {
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Banner principal com 3 sub-banners */
-.banner-principal {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 60px;
-}
-
-.banner-item {
-    flex: 1;
-    padding: 40px 20px;
-    border-radius: 8px;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    min-height: 300px;
-    justify-content: center;
-}
-
-.banner-item:first-child {
-    background-color: #c8e9ef;
-}
-
-.banner-item:nth-child(2) {
-    background-color: #86c4cf;
-}
-
-.banner-item:last-child {
-    background-color: #c8e9ef;
+    gap: 25px;
 }
 
 .quem-somos .logoQuemSomos {
     width: 120px;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .quem-somos .texto h3 {
@@ -258,25 +230,69 @@ img {
     max-width: 700px;
 }
 
-/* Nossos Serviços dentro da mesma section */
+/* ======== NOSSOS SERVIÇOS ======== */
 .nossos-servicos {
+    position: relative;
+}
+
+.servicos-superior {
     background-color: #86c4cf;
-    padding: 40px;
-    border-radius: 8px;
-    margin-bottom: 40px;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos-superior::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
 }
 
 .servicos-inferior {
     background-color: #c8e9ef;
-    padding: 40px;
-    border-radius: 8px;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.nossos-servicos h3 {
+.servicos-inferior::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.servicos-superior > *,
+.servicos-inferior > * {
+    position: relative;
+    z-index: 1;
+}
+
+.servicos-superior .conteudo,
+.servicos-inferior .conteudo {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.servicos-superior h3 {
     color: rgb(6, 54, 67);
     font-size: 28px;
     margin-bottom: 50px;
-    text-align: center;
 }
 
 .servicos-grid {
