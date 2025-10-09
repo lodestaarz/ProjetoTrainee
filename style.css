@@ -179,12 +179,12 @@ img {
 
 /* ======== QUEM SOMOS ======== */
 .quem-somos {
+    background-color: #c8e9ef;
     position: relative;
-    padding: 80px 0 60px 0; 
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
-    background-color: #c8e9ef; 
-    margin-top: 40px; 
+    text-align: center;
 }
 
 .quem-somos::before {
@@ -205,69 +205,50 @@ img {
 }
 
 .quem-somos .conteudo {
-    max-width: 1200px;
-    width: 100%;
+    max-width: 1000px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 0 20px;
+    gap: 25px;
 }
 
-.quem-somos .texto {
-    flex: 1;
-    text-align: left;
+.quem-somos .logoQuemSomos {
+    width: 120px;
+    height: auto;
 }
 
 .quem-somos .texto h3 {
     color: rgb(6, 54, 67);
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 .quem-somos .texto p {
     color: #05353f;
     font-size: 17px;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 700px;
 }
 
-.quem-somos .logoQuemSomos {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-/* ======== BANNERS PARA SERVIÇOS ======== */
-.nossos-servicos,
-.servicos-inferior {
-    display: flex;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    border-radius: 0;
-    border: none;
-    min-height: 400px;
+/* ======== NOSSOS SERVIÇOS ======== */
+.nossos-servicos {
     position: relative;
 }
 
-.nossos-servicos {
+.servicos-superior {
     background-color: #86c4cf;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.servicos-inferior {
-    background-color: #c8e9ef;
-}
-
-.nossos-servicos::before,
-.servicos-inferior::before {
+.servicos-superior::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("fundoanimais.png");
+    background-image: url("pataUNECT.png");
     background-repeat: repeat;
     background-size: 75px;
     background-position: center;
@@ -275,25 +256,43 @@ img {
     z-index: 0;
 }
 
-.nossos-servicos > *,
+.servicos-inferior {
+    background-color: #c8e9ef;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos-inferior::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("pataUNECT.png");
+    background-repeat: repeat;
+    background-size: 75px;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.servicos-superior > *,
 .servicos-inferior > * {
     position: relative;
     z-index: 1;
 }
 
-.nossos-servicos .servicos-grid,
-.servicos-inferior .servicos-grid {
+.servicos-superior .conteudo,
+.servicos-inferior .conteudo {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
-    padding: 60px 20px;
 }
 
-.nossos-servicos h3 {
+.servicos-superior h3 {
     color: rgb(6, 54, 67);
     font-size: 28px;
     margin-bottom: 50px;
-    text-align: center;
 }
 
 .servicos-grid {
@@ -338,8 +337,6 @@ img {
     line-height: 1.6;
     margin: 0;
 }
-
-/*///////////////*/
 
 footer {
   background-color: #5a8087;
