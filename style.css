@@ -183,6 +183,7 @@ img {
     padding: 60px 0; 
     display: flex;
     justify-content: center;
+    margin: 0; 
 }
 
 .quem-somos::before {
@@ -209,10 +210,11 @@ img {
 
 .banner-principal {
     display: flex;
-    gap: 0; 
-    margin-bottom: 60px;
+    gap: 0;
+    margin: 0; 
+    padding: 0;
     width: 100vw; 
-    margin-left: calc(-50vw + 50%); 
+    margin-left: calc(-50vw + 50%);
     border-radius: 0;
     border: none; 
 }
@@ -229,7 +231,7 @@ img {
     position: relative;
     border-radius: 0;
     border: none !important; 
-    margin: 0; 
+    margin: 0;
 }
 
 .banner-item:first-child {
@@ -254,6 +256,7 @@ img {
     background-position: center;
     opacity: 0.15;
     z-index: 0;
+    pointer-events: none;
 }
 
 .banner-item > * {
@@ -261,38 +264,21 @@ img {
     z-index: 1;
 }
 
-.quem-somos .logoQuemSomos {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.quem-somos .texto h3 {
-    color: rgb(6, 54, 67);
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.quem-somos .texto p {
-    color: #05353f;
-    font-size: 17px;
-    line-height: 1.6;
-    max-width: 700px;
+/* ======== SERVIÇOS ======== */
+.nossos-servicos,
+.servicos-inferior {
+    position: relative;
+    padding: 40px;
+    border-radius: 0;
+    margin: 0; 
 }
 
 .nossos-servicos {
     background-color: #86c4cf;
-    padding: 40px;
-    margin-bottom: 40px;
-    position: relative;
-    border-radius: 0;
 }
 
 .servicos-inferior {
     background-color: #c8e9ef;
-    padding: 40px;
-    position: relative;
-    border-radius: 0;
 }
 
 .nossos-servicos::before,
@@ -306,6 +292,7 @@ img {
     background-position: center;
     opacity: 0.15;
     z-index: 0;
+    pointer-events: none;
 }
 
 .nossos-servicos > *,
@@ -314,77 +301,6 @@ img {
     z-index: 1;
 }
 
-.nossos-servicos h3 {
-    color: rgb(6, 54, 67);
-    font-size: 28px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.servicos-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-}
-
-.servico-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.servico-item img {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.servico-info {
-    flex: 1;
-    text-align: left;
-}
-
-.servico-info h4 {
-    color: rgb(6, 54, 67);
-    font-size: 22px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.servico-info p {
-    color: #05353f;
-    font-size: 17px;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.banner-item:first-child .conteudo-banner {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.banner-item:first-child .texto {
-    flex: 1;
-    text-align: left;
-}
-
-.banner-item:first-child .logoQuemSomos {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
-    object-fit: cover;
-    flex-shrink: 0;
-    margin-bottom: 0;
-}
 
 /*///////////////*/
 
