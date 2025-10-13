@@ -504,14 +504,33 @@ footer {
     margin-bottom: 15px;
 }
 
-.contato-redes p {
-    margin: 10px 0;
+.contato-redes {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 8px;
     color: #063643;
     font-size: 16px;
 }
+
+.contato-redes a,
+.contato-redes p {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.contato-redes a:nth-of-type(1),
+.contato-redes a:nth-of-type(2),
+.contato-redes a:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+}
+
+.contato-redes p {
+    display: inline;
+}
+
 
 .contato-form {
     flex: 1;
