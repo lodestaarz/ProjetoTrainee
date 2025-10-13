@@ -178,6 +178,11 @@ img {
 }
 
 /* ======== QUEM SOMOS ======== */
+
+* {
+    box-sizing: border-box;
+}
+
 .quem-somos{
     height: 300px;
     width: 100%;
