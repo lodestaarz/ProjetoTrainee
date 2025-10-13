@@ -266,6 +266,51 @@ img {
     }
 }
 
+.servicos-inferiores{
+    height: 300px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding-inline: 10rem;
+
+    background: url(fundoanimais.png);
+    background-color: #3c889c;
+    background-position: center;
+    position: relative;
+
+    & .img-container-inferior{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 40%;
+        
+        /* Adicionado para mover a imagem para a direita */
+        order: 2;
+
+       & img{
+           width: 100%;
+           height: 100%;
+       } 
+    }
+
+    & .texto-container-inferior{
+        width: 50%; /* Alterado de 100% para 50% */
+        font-family: sans-serif;
+        color: #063643;
+
+        /* Removidas as propriedades de position absoluta */
+        position: static; /* ou relative */
+        
+        /* Adicionado para mover o texto para a esquerda */
+        order: 1;
+        
+        /* Opcional: ajuste de espaçamento */
+        padding-right: 5%;
+    }
+}
+
 footer {
   background-color: #5a8087;
   color: #ccc;
