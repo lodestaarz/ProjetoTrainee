@@ -228,6 +228,7 @@ img {
     background: url(fundoanimais.png);
     background-color: #89c5d5;
     background-position: center;
+    position: relative;
 
     & .img-container{
         display: flex;
@@ -245,6 +246,12 @@ img {
         width: 100%;
         font-family: sans-serif;
         color: #063643;
+
+        position: absolute;
+        top: 20px; 
+        left: 10rem; 
+        right: 10rem;
+        z-index: 10; 
 
         & h2{
             margin-bottom: 33px;
