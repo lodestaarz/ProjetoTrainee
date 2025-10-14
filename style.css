@@ -228,7 +228,7 @@ img {
 }
 
 .nossos-servicos{
-    height: 300px;
+    height: 420px;
     width: 100%;
 
     display: flex;
@@ -237,39 +237,31 @@ img {
     padding-inline: 10rem;
 
     background: url(fundoanimais.png);
-    background-color: #3c889c;
+    background-color: #6BB7CB;
     background-position: center;
     position: relative;
+}
 
-    & .img-container{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 40%;
+.img-container2 h2 {
+    color: #0E3C48;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
 
-       & img{
-           width: 100%;
-           height: 100%;
-       } 
-    }
+.img-container2 img {
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    margin-left: 200px;
+}
 
-    & .texto-container{
-        width: 100%;
-        font-family: sans-serif;
-        color: #063643;
-
-        position: absolute;
-        top: 20px; 
-        left: 10rem; 
-        right: 10rem;
-        z-index: 10; 
-
-        & h2{
-            margin-bottom: 33px;
-            font: 700 1.5rem/125% sans-serif;
-            letter-spacing: 2%;
-        }
-    }
+.text-container2 p {
+    color: #0E3C48;
+    font-size: 18px;
+    padding-right: 120px;
+    margin-left: -50px;
+    margin-top: 40px;
 }
 
 .servicos-inferiores{
