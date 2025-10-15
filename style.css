@@ -505,11 +505,17 @@ footer {
     font-size: 16px;
 }
 
+.contato-redes p img {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
 .contato-form {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    justify-content: flex-start;
 }
 
 .contato-form label {
@@ -531,18 +537,21 @@ footer {
     min-height: 100px;
 }
 
-.contato-form button {
+.contato-form .btn-enviar {
     background-color: #0b5c6b;
-    color: #F8F8FF;
+    color: #fff;
     font-weight: bold;
     border: none;
-    padding: 12px;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.3s;
+    align-self: flex-start;
+    width: 120px;         /* tamanho do botão */
+    padding: 12px 0;
+    margin-top: 10px;     /* posicionamento */
 }
 
-.contato-form button:hover {
+.contato-form .btn-enviar:hover {
     background-color: #0a4954;
 }
 
