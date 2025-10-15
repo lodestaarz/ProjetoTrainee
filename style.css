@@ -505,11 +505,13 @@ footer {
     margin-bottom: 15px;
 }
 
+        
 .contato-info iframe {
-    aspect-ratio: 1 / 1;  
     width: 100%;
+    height: 300px; 
+    border: 0;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .contato-redes p {
