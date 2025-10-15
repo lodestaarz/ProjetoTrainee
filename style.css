@@ -446,28 +446,12 @@ footer {
 }
 
 /* ======== CONTATO ======== */
-.contato {
-    background-color: #E2F5FA;
-    padding: 60px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato h2 {
-    font-size: 28px;
-    color: #063643;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: left;
-    width: 80%;
-    max-width: 1200px;
-}
 
 .contato-container {
     background-color: #F8FCFF;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding: 40px;
     border-radius: 10px;
     border: black 0.1px solid;
@@ -477,64 +461,22 @@ footer {
     gap: 30px;
 }
 
-.contato-info {
-    flex: 1;
+.linha-divisoria {
+    width: 1.5px;
+    background-color: #d3d3d3;
+    height: auto;
+    align-self: stretch;
 }
 
-.contato-info h3 {
-    color: #063643;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.contato-info p {
-    font-size: 16px;
-    color: #05353f;
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.contato-redes p{
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #063643;
-    font-size: 16px;
+.contato-info iframe {
+    height: 180px;
+    border-radius: 8px;
 }
 
 .contato-redes p img {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
-}
-
-.contato-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: flex-start;
-}
-
-.contato-form label {
-    font-weight: bold;
-    color: #063643;
-}
-
-.contato-form input,
-.contato-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    width: 100%;
-}
-
-.contato-form textarea {
-    resize: vertical;
-    min-height: 100px;
 }
 
 .contato-form .btn-enviar {
@@ -546,9 +488,9 @@ footer {
     cursor: pointer;
     transition: 0.3s;
     align-self: flex-start;
-    width: 120px;         /* tamanho do botão */
+    width: 120px;
     padding: 12px 0;
-    margin-top: 10px;     /* posicionamento */
+    margin-top: 8px;
 }
 
 .contato-form .btn-enviar:hover {
