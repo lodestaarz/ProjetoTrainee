@@ -506,7 +506,8 @@ footer {
 }
 
 .contato-info iframe {
-    height: 180px;
+    aspect-ratio: 1 / 1;  
+    width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -523,10 +524,8 @@ footer {
 .contato-redes p img {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
 }
 
-/* Formulário */
 .contato-form {
     flex: 1;
     display: flex;
@@ -553,7 +552,6 @@ footer {
     min-height: 100px;
 }
 
-/* Botão */
 .contato-form .btn-enviar {
     background-color: #0b5c6b;
     color: #fff;
