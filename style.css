@@ -265,7 +265,7 @@ img {
 }
 
 .servicos-inferiores{
-    height: 300px;
+    height: 325px;
     width: 100%;
 
     display: flex;
@@ -277,28 +277,20 @@ img {
     background-color: #89c5d5;
     background-position: center;
     position: relative;
+}
 
-    & .img-container-inferior{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 40%;
-        order: 2;
+.text-container-inferior p {
+    color: #0E3C48;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-top: -80px;
+}
 
-       & img{
-           width: 100%;
-           height: 100%;
-       } 
-    }
-
-    & .texto-container-inferior{
-        width: 50%; 
-        font-family: sans-serif;
-        color: #063643;
-        position: static; /* ou relative */
-        order: 1;
-        
-    }
+.img-container-inferior img {
+    width: 320px;
+    height: 220px;
+    border-radius: 12px;
+    margin-right: 200px;
 }
 
 footer {
@@ -455,7 +447,7 @@ footer {
 
 /* ======== CONTATO ======== */
 .contato {
-    background-color: #d7eef3;
+    background-color: #E2F5FA;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -473,11 +465,12 @@ footer {
 }
 
 .contato-container {
-    background-color: #f8fdfd;
+    background-color: #F8FCFF;
     display: flex;
     justify-content: space-between;
     padding: 40px;
     border-radius: 10px;
+    border: black 0.1px solid;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     width: 80%;
     max-width: 1200px;
@@ -498,6 +491,7 @@ footer {
 .contato-info p {
     font-size: 16px;
     color: #05353f;
+    font-style: italic;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -539,7 +533,7 @@ footer {
 
 .contato-form button {
     background-color: #0b5c6b;
-    color: #063643;
+    color: #F8F8FF;
     font-weight: bold;
     border: none;
     padding: 12px;
