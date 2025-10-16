@@ -294,8 +294,8 @@ img {
 }
 
 footer {
-  background-color: #5a8087;
-  color: #ccc;
+  background-color: #063643;
+  color: #DAEDFF;
   padding: 1.5rem;
   margin-top: auto;
   width: 100%;
@@ -572,8 +572,10 @@ footer {
     background-color: #0a4954;
 }
 
+/* ======== BANNER INFERIOR ======== */
+
 #banner-inferior {
-    background-color: #ffffff;
+    background-color: #F8F8FF;
     color: #063643;
     padding: 40px 0;
 }
@@ -594,10 +596,11 @@ footer {
 }
 
 .banner-logo img {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 100px;
     display: block;
     margin: 0 auto 10px auto;
+    
 }
 
 .banner-logo h2 {
