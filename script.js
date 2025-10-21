@@ -34,17 +34,99 @@ document.getElementById("prev").addEventListener("click", function () {
     trocarPagina('prev');
 });
 
-// ======== EXPANDIR AVALIAÇÕES ========
-document.getElementById("btn-expandir").addEventListener("click", function() {
-  const extra = document.getElementById("avaliacoes-extra");
-  const btn = this;
+// ======== CONTROLE DE PÁGINAS DE AVALIAÇÕES ========
+let paginaAvaliacoes = 1;
+const totalPaginasAvaliacoes = 3;
 
-  if (extra.style.display === "none") {
-    extra.style.display = "flex";
-    extra.style.flexDirection = "column";
-    btn.innerHTML = "↑ Ver menos avaliações";
+const listaAvaliacoes = document.querySelector(".avaliacoes-lista");
+const btnAvaliacoes = document.getElementById("btn-avaliacoes");
+const spanPagina = document.getElementById("pagina-avaliacoes");
+const seta = document.querySelector(".seta-avaliacoes");
+
+// Avaliações de exemplo para trocar
+const avaliacoesPorPagina = [
+  [
+    {
+      nome: "Carlos Alberto",
+      texto: "Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.",
+      foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Neymar Jr",
+      texto: "Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.",
+      foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Josseana da Silva",
+      texto: "Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.",
+      foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+    }
+  ],
+  [
+    {
+      nome: "Mariana Lopes",
+      texto: "Meu gato foi super bem atendido, adorei o carinho da equipe!",
+      foto: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Rafael Costa",
+      texto: "Ambiente limpo e atendimento rápido. Recomendo muito!",
+      foto: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Aline Fernandes",
+      texto: "Atendimento incrível, voltarei com certeza!",
+      foto: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&fit=crop&crop=face"
+    }
+  ],
+  [
+    {
+      nome: "Pedro Henrique",
+      texto: "Equipe excelente e atendimento super humano.",
+      foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Juliana Mendes",
+      texto: "Fiquei impressionada com o cuidado e atenção com meu cachorro!",
+      foto: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=face"
+    },
+    {
+      nome: "Lucas Pereira",
+      texto: "Serviço rápido e veterinários muito atenciosos.",
+      foto: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop&crop=face"
+    }
+  ]
+];
+
+btnAvaliacoes.addEventListener("click", () => {
+  const direcao = paginaAvaliacoes === totalPaginasAvaliacoes ? "esquerda" : "direita";
+
+  if (direcao === "direita") {
+    paginaAvaliacoes++;
+    btnAvaliacoes.classList.add("mover-direita");
   } else {
-    extra.style.display = "none";
-    btn.innerHTML = "↓ Ver mais avaliações";
+    paginaAvaliacoes = 1;
+    btnAvaliacoes.classList.add("mover-esquerda");
   }
+
+  spanPagina.textContent = paginaAvaliacoes;
+  seta.textContent = paginaAvaliacoes === totalPaginasAvaliacoes ? "←" : "→";
+
+  listaAvaliacoes.innerHTML = avaliacoesPorPagina[paginaAvaliacoes - 1]
+    .map(av => `
+      <div class="avaliacao-item">
+        <img src="${av.foto}" alt="${av.nome}" class="avaliacao-foto">
+        <div class="avaliacao-conteudo">
+          <div class="avaliacao-cabecalho">
+            <div class="estrelas">★★★★★</div>
+            <div class="avaliacao-nome">${av.nome}</div>
+          </div>
+          <div class="avaliacao-texto">${av.texto}</div>
+        </div>
+      </div>
+    `).join("");
+
+  setTimeout(() => {
+    btnAvaliacoes.classList.remove("mover-direita", "mover-esquerda");
+  }, 300);
 });
