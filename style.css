@@ -503,6 +503,40 @@ footer {
     line-height: 1.5;
 }
 
+/* ======== BOTÃO EXPANDIR AVALIAÇÕES ======== */
+
+.avaliacoes-expandir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -30px;
+  margin-bottom: 60px;
+}
+
+.btn-expandir {
+  background-color: #0F637A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-expandir:hover {
+  background-color: #0c5061;
+  transform: scale(1.05);
+}
+
+.avaliacoes-extra {
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+
 /* ======== CONTATO ======== */
 
 .contato {
@@ -723,3 +757,4 @@ footer {
 .social-icons img:hover {
     transform: scale(1.1);
 }
+

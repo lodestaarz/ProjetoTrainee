@@ -33,3 +33,18 @@ document.getElementById("next").addEventListener("click", function () {
 document.getElementById("prev").addEventListener("click", function () {
     trocarPagina('prev');
 });
+
+// ======== EXPANDIR AVALIAÇÕES ========
+document.getElementById("btn-expandir").addEventListener("click", function() {
+  const extra = document.getElementById("avaliacoes-extra");
+  const btn = this;
+
+  if (extra.style.display === "none") {
+    extra.style.display = "flex";
+    extra.style.flexDirection = "column";
+    btn.innerHTML = "↑ Ver menos avaliações";
+  } else {
+    extra.style.display = "none";
+    btn.innerHTML = "↓ Ver mais avaliações";
+  }
+});
