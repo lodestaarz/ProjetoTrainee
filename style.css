@@ -109,6 +109,27 @@ img {
 }
 
 /* ======== CAMPANHA ======== */
+:root {
+    --cor11: #6BB7CB;
+    --cor6: #C4C4C4;
+}
+
+.container-carrossel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-carrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .campanha {
     display: flex;
     margin: 40px auto;
@@ -121,7 +142,7 @@ img {
     display: flex;
     background-color: #6BB7CB;
     border-radius: 8px;
-    width: 85%;
+    width: 65%;
     gap: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -133,7 +154,6 @@ img {
     margin-left: 20px;
     margin-bottom: -40px;
 }
-
 
 .cardCentro h3 {
     font-size: 28px;
@@ -175,6 +195,44 @@ img {
     height: 210px;
     margin-left: -20px;
     margin-top: 80px;
+}
+
+.seta {
+    position: absolute;
+    top: 35%;
+    font-size: 32px;
+    color: #0F637A;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.seta:hover {
+    color: #063643;
+}
+
+.seta-esquerda {
+    left: 270px;
+}
+
+.seta-direita {
+    right: 270px;
+}
+
+.circulos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    gap: 12px;
+}
+
+.div-circulos {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--cor6);
+    cursor: pointer;
 }
 
 /* ======== QUEM SOMOS ======== */
