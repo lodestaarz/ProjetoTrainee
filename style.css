@@ -479,28 +479,29 @@ footer {
 }
         
 .avaliacao-cabecalho {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 8px;
 }
         
 .estrelas {
-    font-size: 18px;
-    color: #FFD700;
-    letter-spacing: 2px;
+  font-size: 18px;
+  color: #FFD700;
+  letter-spacing: 2px;
 }
         
 .avaliacao-nome {
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
+  font-size: 16px;
+  color: #063643;
+  font-weight: bold;
 }
         
 .avaliacao-texto {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.5;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* CONTROLE DE AVALIAÇÕES */

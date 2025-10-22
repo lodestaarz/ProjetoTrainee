@@ -72,6 +72,9 @@ const avaliacoesPorPagina = [
 ];
 
 function atualizarAvaliacoes() {
+  const btnPrev = document.getElementById("prev-avaliacao");
+  const btnNext = document.getElementById("next-avaliacao");
+
   listaAvaliacoes.innerHTML = avaliacoesPorPagina[paginaAvaliacoes - 1]
     .map(av => `
       <div class="avaliacao-item">
@@ -86,7 +89,19 @@ function atualizarAvaliacoes() {
       </div>
       <hr class="linha-avaliacao">
     `).join("");
+
   spanPagina.textContent = paginaAvaliacoes;
+
+  if (paginaAvaliacoes === 1) {
+    btnPrev.style.display = "none";
+    btnNext.style.display = "inline-block";
+  } else if (paginaAvaliacoes === totalPaginasAvaliacoes) {
+    btnPrev.style.display = "inline-block";
+    btnNext.style.display = "none";
+  } else {
+    btnPrev.style.display = "inline-block";
+    btnNext.style.display = "inline-block";
+  }
 }
 
 document.getElementById("next-avaliacao").addEventListener("click", () => {
