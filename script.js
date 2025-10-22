@@ -34,84 +34,31 @@ document.getElementById("prev").addEventListener("click", function () {
     trocarPagina('prev');
 });
 
-// ======== CONTROLE DE PÁGINAS DE AVALIAÇÕES ========
+// AVALIAÇÕES
 let paginaAvaliacoes = 1;
 const totalPaginasAvaliacoes = 3;
-
 const listaAvaliacoes = document.querySelector(".avaliacoes-lista");
-const btnAvaliacoes = document.getElementById("btn-avaliacoes");
 const spanPagina = document.getElementById("pagina-avaliacoes");
-const seta = document.querySelector(".seta-avaliacoes");
 
-// Avaliações de exemplo para trocar
 const avaliacoesPorPagina = [
   [
-    {
-      nome: "Carlos Alberto",
-      texto: "Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.",
-      foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Neymar Jr",
-      texto: "Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.",
-      foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Josseana da Silva",
-      texto: "Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.",
-      foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
-    }
+    { nome: "Carlos Alberto", texto: "Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Neymar Jr", texto: "Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.", foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Josseana da Silva", texto: "Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.", foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" }
   ],
   [
-    {
-      nome: "Mariana Lopes",
-      texto: "Meu gato foi super bem atendido, adorei o carinho da equipe!",
-      foto: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Rafael Costa",
-      texto: "Ambiente limpo e atendimento rápido. Recomendo muito!",
-      foto: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Aline Fernandes",
-      texto: "Atendimento incrível, voltarei com certeza!",
-      foto: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&fit=crop&crop=face"
-    }
+    { nome: "Mariana Lopes", texto: "Meu gato foi super bem atendido, adorei o carinho da equipe!", foto: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Rafael Costa", texto: "Ambiente limpo e atendimento rápido. Recomendo muito!", foto: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Aline Fernandes", texto: "Atendimento incrível, voltarei com certeza!", foto: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&fit=crop&crop=face" }
   ],
   [
-    {
-      nome: "Pedro Henrique",
-      texto: "Equipe excelente e atendimento super humano.",
-      foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Juliana Mendes",
-      texto: "Fiquei impressionada com o cuidado e atenção com meu cachorro!",
-      foto: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      nome: "Lucas Pereira",
-      texto: "Serviço rápido e veterinários muito atenciosos.",
-      foto: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop&crop=face"
-    }
+    { nome: "Pedro Henrique", texto: "Equipe excelente e atendimento super humano.", foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Juliana Mendes", texto: "Fiquei impressionada com o cuidado e atenção com meu cachorro!", foto: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=face" },
+    { nome: "Lucas Pereira", texto: "Serviço rápido e veterinários muito atenciosos.", foto: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop&crop=face" }
   ]
 ];
 
-btnAvaliacoes.addEventListener("click", () => {
-  const direcao = paginaAvaliacoes === totalPaginasAvaliacoes ? "esquerda" : "direita";
-
-  if (direcao === "direita") {
-    paginaAvaliacoes++;
-    btnAvaliacoes.classList.add("mover-direita");
-  } else {
-    paginaAvaliacoes = 1;
-    btnAvaliacoes.classList.add("mover-esquerda");
-  }
-
-  spanPagina.textContent = paginaAvaliacoes;
-  seta.textContent = paginaAvaliacoes === totalPaginasAvaliacoes ? "←" : "→";
-
+function atualizarAvaliacoes() {
   listaAvaliacoes.innerHTML = avaliacoesPorPagina[paginaAvaliacoes - 1]
     .map(av => `
       <div class="avaliacao-item">
@@ -125,8 +72,17 @@ btnAvaliacoes.addEventListener("click", () => {
         </div>
       </div>
     `).join("");
+  spanPagina.textContent = paginaAvaliacoes;
+}
 
-  setTimeout(() => {
-    btnAvaliacoes.classList.remove("mover-direita", "mover-esquerda");
-  }, 300);
+document.getElementById("next-avaliacao").addEventListener("click", () => {
+  paginaAvaliacoes = paginaAvaliacoes < totalPaginasAvaliacoes ? paginaAvaliacoes + 1 : 1;
+  atualizarAvaliacoes();
 });
+
+document.getElementById("prev-avaliacao").addEventListener("click", () => {
+  paginaAvaliacoes = paginaAvaliacoes > 1 ? paginaAvaliacoes - 1 : totalPaginasAvaliacoes;
+  atualizarAvaliacoes();
+});
+
+window.addEventListener("load", atualizarAvaliacoes);
