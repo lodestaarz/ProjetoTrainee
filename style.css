@@ -508,7 +508,6 @@ footer {
   position: relative;
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .avaliacoes-controle {
@@ -521,7 +520,8 @@ footer {
 }
 
 .btn-avaliacoes {
-  color: white;
+  color: #063643;
+  background-color: #E2F5FA;
   border: none;
   border-radius: 6px;
   padding: 8px 14px;
