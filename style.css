@@ -503,16 +503,16 @@ footer {
     line-height: 1.5;
 }
 
-/* ======== BOTÃO EXPANDIR AVALIAÇÕES ======== */
-
 /* ======== CONTROLE DE AVALIAÇÕES ======== */
-.avaliacoes-controle {
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  max-width: 1200px;
-  margin: 20px auto 0;
+/* ======== CONTROLE DE AVALIAÇÕES ======== */
+.avaliacoes-container {
   position: relative;
+}
+
+.avaliacoes-controle {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
 
 .btn-avaliacoes {
@@ -520,7 +520,7 @@ footer {
   color: white;
   border: none;
   border-radius: 6px;
-  padding: 10px 18px;
+  padding: 12px 22px;
   font-size: 18px;
   font-weight: bold;
   display: flex;

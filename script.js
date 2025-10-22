@@ -3,23 +3,23 @@ const totalPaginasCarrossel = 3;
 
 function trocarPagina(direcao) {
     const banners = document.querySelectorAll('.banner-carrossel');
-    const circulos = document.querySelectorAll('.div-circulos');
+  const circulos = document.querySelectorAll('.div-circulos');
 
-    if (direcao === 'prev') {
-        paginaAtualCarrossel = paginaAtualCarrossel === 1 ? totalPaginasCarrossel : paginaAtualCarrossel - 1;
-    } else if (direcao === 'next') {
-        paginaAtualCarrossel = paginaAtualCarrossel === totalPaginasCarrossel ? 1 : paginaAtualCarrossel + 1;
-    } else if (direcao === 'number') {
-        paginaAtualCarrossel = direcao;
-    }
+  if (direcao === 'prev') {
+      paginaAtualCarrossel = paginaAtualCarrossel === 1 ? totalPaginasCarrossel : paginaAtualCarrossel - 1;
+  } else if (direcao === 'next') {
+      paginaAtualCarrossel = paginaAtualCarrossel === totalPaginasCarrossel ? 1 : paginaAtualCarrossel + 1;
+  } else if (typeof direcao === 'number') {
+      paginaAtualCarrossel = direcao;
+  }
 
-    banners.forEach((banner, index) => {
-        banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
-    });
+  banners.forEach((banner, index) => {
+      banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
+  });
 
-    circulos.forEach((circulos, index) => {
-       circulos.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)'; 
-    });
+  circulos.forEach((c, index) => {
+      c.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)';
+  });
 }
 
 window.onload = function () {
