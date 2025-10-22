@@ -197,6 +197,83 @@ img {
     margin-top: 80px;
 }
 
+.banner-adocao-container {
+    width: 65%;
+    background-image: url('PataeOssoBackground.png');
+    background-color: #063643;
+    border-radius: 8px;
+    gap: 30px;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner-adocao {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+.conteudo-texto {
+    width: 55%; 
+    padding: 0px 50px;
+    z-index: 10;
+}
+
+.conteudo-texto h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+}
+
+.conteudo-texto p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+
+.btn-adocao {
+    display: inline-block;
+    padding: 16px 50px;
+    background-color: white;
+    color: #0F373F; 
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.btn-adocao:hover {
+    background-color: #f0f0f0;
+}
+
+.golden img {
+    position: absolute;
+    top: 75px;
+    right: 25%;
+    width: 180px;
+    height: auto;
+    z-index: 5;
+}
+
+.gato img {
+    position: absolute;
+    top: 20px;
+    right: -98px;
+    width: 360px;
+    height: auto;
+    transform: rotate(270deg) scaleX(-1);
+    z-index: 5;
+}
+
 .seta {
     position: absolute;
     top: 35%;
