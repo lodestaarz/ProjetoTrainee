@@ -506,7 +506,6 @@ footer {
 /* CONTROLE DE AVALIAÇÕES */
 .avaliacoes-container {
   position: relative;
-  background-color: #fff;
   border-radius: 15px;
   padding: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -522,7 +521,6 @@ footer {
 }
 
 .btn-avaliacoes {
-  background-color: #0F637A;
   color: white;
   border: none;
   border-radius: 6px;
@@ -536,7 +534,6 @@ footer {
 
 .btn-avaliacoes:hover {
   background-color: #0c5061;
-  transform: scale(1.05);
 }
 
 .pagina-avaliacoes {
@@ -545,6 +542,11 @@ footer {
   color: #063643;
 }
 
+.linha-avaliacao {
+  border: none;
+  border-top: 1.5px solid #dcdcdc;
+  margin: 10px 0;
+}
 
 
 /* ======== CONTATO ======== */

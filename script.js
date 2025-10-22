@@ -2,24 +2,37 @@ let paginaAtualCarrossel = 1;
 const totalPaginasCarrossel = 3;
 
 function trocarPagina(direcao) {
-    const banners = document.querySelectorAll('.banner-carrossel');
+const banners = document.querySelectorAll('.banner-carrossel');
   const circulos = document.querySelectorAll('.div-circulos');
+  const setaEsquerda = document.getElementById('prev');
+  const setaDireita = document.getElementById('next');
 
   if (direcao === 'prev') {
-      paginaAtualCarrossel = paginaAtualCarrossel === 1 ? totalPaginasCarrossel : paginaAtualCarrossel - 1;
+    paginaAtualCarrossel = Math.max(1, paginaAtualCarrossel - 1);
   } else if (direcao === 'next') {
-      paginaAtualCarrossel = paginaAtualCarrossel === totalPaginasCarrossel ? 1 : paginaAtualCarrossel + 1;
+    paginaAtualCarrossel = Math.min(totalPaginasCarrossel, paginaAtualCarrossel + 1);
   } else if (typeof direcao === 'number') {
-      paginaAtualCarrossel = direcao;
+    paginaAtualCarrossel = direcao;
   }
 
   banners.forEach((banner, index) => {
-      banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
+    banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
   });
 
   circulos.forEach((c, index) => {
-      c.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)';
+    c.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)';
   });
+
+  if (paginaAtualCarrossel === 1) {
+    setaEsquerda.style.display = 'none';
+    setaDireita.style.display = 'block';
+  } else if (paginaAtualCarrossel === totalPaginasCarrossel) {
+    setaEsquerda.style.display = 'block';
+    setaDireita.style.display = 'none';
+  } else {
+    setaEsquerda.style.display = 'block';
+    setaDireita.style.display = 'block';
+  }
 }
 
 window.onload = function () {
@@ -71,6 +84,7 @@ function atualizarAvaliacoes() {
           <div class="avaliacao-texto">${av.texto}</div>
         </div>
       </div>
+      <hr class="linha-avaliacao">
     `).join("");
   spanPagina.textContent = paginaAvaliacoes;
 }
