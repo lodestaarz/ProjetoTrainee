@@ -115,3 +115,41 @@ document.getElementById("prev-avaliacao").addEventListener("click", () => {
 });
 
 window.addEventListener("load", atualizarAvaliacoes);
+
+// REDIRECIONAMENTO INTERNO 
+document.addEventListener("DOMContentLoaded", function () {
+  
+  function rolarPara(seletor) {
+    const destino = document.querySelector(seletor);
+    if (destino) {
+      destino.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  const linksMenu = document.querySelectorAll(".menu a");
+  linksMenu.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const texto = this.textContent.trim().toLowerCase();
+
+      if (texto.includes("início")) rolarPara("body");
+      else if (texto.includes("serviço")) rolarPara(".nossos-servicos");
+      else if (texto.includes("sobre")) rolarPara(".quem-somos");
+      else if (texto.includes("contato")) rolarPara(".contato");
+    });
+  });
+
+  const linksBanner = document.querySelectorAll(".banner-links a");
+  linksBanner.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const texto = this.textContent.trim().toLowerCase();
+
+      if (texto.includes("sobre")) rolarPara(".quem-somos");
+      else if (texto.includes("serviço")) rolarPara(".nossos-servicos");
+      else if (texto.includes("termo")) alert("Página de Termos ainda em desenvolvimento 😊");
+    });
+  });
+
+});
+
