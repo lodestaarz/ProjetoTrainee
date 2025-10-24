@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+.border {
+    border: 2px solid black;
+}
+
 /* ======== CABEÇALHO ======== */
 .cabeçalho {
     display: flex;
