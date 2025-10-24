@@ -147,9 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (texto.includes("sobre")) rolarPara(".quem-somos");
       else if (texto.includes("serviço")) rolarPara(".nossos-servicos");
-      else if (texto.includes("termo")) alert("Página de Termos ainda em desenvolvimento 😊");
+      else if (texto.includes("termo")) alert("Página de Termos ainda em desenvolvimento");
     });
   });
 
 });
+
 
