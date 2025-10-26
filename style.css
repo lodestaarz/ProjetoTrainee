@@ -20,6 +20,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1000; 
+    font-family: "Poppins", sans-serif;
 }
 
 .iconeTexto {
@@ -46,6 +47,7 @@ body {
 
 .menu a:hover {
     color: #5a8087;
+    background-color: #6BB7CB66 40%;
 }
 
 img {
@@ -540,7 +542,7 @@ footer {
         
 .profissionais-container {
     width: 100%;
-    background-color: rgb(107, 183, 203);
+    background-color: #F8F8FF ;
     border-radius: 15px;
     padding: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -746,6 +748,7 @@ footer {
     width: 80%;
     max-width: 1200px;
     gap: 30px;
+    font-family: "Poppins", sans-serif;
 }
 
 .linha-divisoria {
