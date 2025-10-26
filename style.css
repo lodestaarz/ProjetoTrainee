@@ -860,19 +860,19 @@ footer {
 #banner-inferior {
     background-color: #F8F8FF;
     color: #063643;
-    padding: 20px 0; 
+    padding: 10px 0; 
     font-family: "Poppins", sans-serif;
     margin-top: 10px; 
 }
 
 .banner-container {
-    width: 85%;
+    width: 60%;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: start;
 }
 
 .banner-logo {
@@ -883,7 +883,6 @@ footer {
 .banner-logo img {
     width: 110px;
     height: 100px;
-    display: block;
     margin: 0 auto 10px auto;
     
 }
@@ -936,7 +935,7 @@ footer {
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 15px;
 }
 
