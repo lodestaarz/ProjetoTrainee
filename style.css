@@ -48,7 +48,10 @@ body {
 .menu a:hover {
     color: #5a8087;
     background-color: #6BB7CB66;
+    border-radius: 20px;
+    padding: 15px 25px; 
 }
+
 
 img {
     width: 110px;
@@ -857,16 +860,17 @@ footer {
 #banner-inferior {
     background-color: #F8F8FF;
     color: #063643;
-    padding: 40px 0;
+    padding: 20px 0; 
     font-family: "Poppins", sans-serif;
+    margin-top: 10px; 
 }
 
 .banner-container {
     width: 85%;
-    margin: auto;
+    margin:0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -907,7 +911,7 @@ footer {
 }
 
 .banner-links li {
-    margin: 6px 0;
+    margin: 3px 0;
 }
 
 .banner-links a {
