@@ -74,10 +74,10 @@ img {
 
 .imagemLinhas {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 180px; 
-    opacity: 0.4; 
+    margin-top: 10px;
+    right: 10px;
+    width: 220px; 
+    height: 220px;
     pointer-events: none; 
 }
 
