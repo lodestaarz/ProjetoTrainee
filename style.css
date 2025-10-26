@@ -47,7 +47,7 @@ body {
 
 .menu a:hover {
     color: #5a8087;
-    background-color: #6BB7CB66 40%;
+    background-color: #6BB7CB66;
 }
 
 img {
@@ -64,6 +64,7 @@ img {
     width: 80%;
     max-width: 1200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
 }
 
 .bannerConteudo {
@@ -128,6 +129,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: "Poppins", sans-serif;
 }
 
 .banner-carrossel {
@@ -448,6 +450,8 @@ img {
     font-size: 18px;
     padding-right: 180px;
     margin-top: 40px;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 .nossos-servicos{
@@ -470,13 +474,16 @@ img {
     font-weight: bold;
     margin-bottom: 50px;
     margin-left: 200px;
+    font-family: "Poppins", sans-serif;
 }
+
 
 .img-container2 img {
     width: 350px;
     height: 250px;
     border-radius: 12px;
     margin-left: 200px;
+    font-family: "Poppins", sans-serif;
 }
 
 .text-container2 p {
@@ -516,6 +523,7 @@ img {
     height: 220px;
     border-radius: 12px;
     margin-right: 200px;
+    font-family: "Poppins", sans-serif;
 }
 
 footer {
