@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #E2F5FA;
@@ -430,12 +431,14 @@ img {
     line-height: 1.2;
     margin-left: 300px;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 .text-container h2 {
     color: #0E3C48;
     font-weight: bold;
     margin-top: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .text-container p {
@@ -480,6 +483,7 @@ img {
     padding-right: 120px;
     margin-left: -50px;
     margin-top: 40px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .servicos-inferiores{
@@ -502,6 +506,7 @@ img {
     font-size: 18px;
     margin-left: 200px;
     margin-top: -80px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .img-container-inferior img {
@@ -842,6 +847,7 @@ footer {
     background-color: #F8F8FF;
     color: #063643;
     padding: 40px 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .banner-container {
@@ -871,6 +877,7 @@ footer {
     margin: 0;
     font-size: 22px;
     color: #063643;
+    font-family: "Poppins", sans-serif;
 }
 
 .banner-links {
