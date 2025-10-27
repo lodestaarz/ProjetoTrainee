@@ -1884,16 +1884,18 @@ footer {
         justify-content: center;
         padding: 25px 15px;
         width: 100%;
-        background-color: #F8FCFF;        
+        background-color: #F8FCFF; 
+        
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
     }
 
-    /* Oculta tudo, menos o formulário */
     .contato-info,
     .linha-divisoria {
         display: none !important;
     }
 
-    /* Mostra apenas o formulário */
     .contato-form {
         width: 150%;
         max-width: 650px;
