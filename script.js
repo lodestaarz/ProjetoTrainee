@@ -2,37 +2,24 @@ let paginaAtualCarrossel = 1;
 const totalPaginasCarrossel = 3;
 
 function trocarPagina(direcao) {
-const banners = document.querySelectorAll('.banner-carrossel');
-  const circulos = document.querySelectorAll('.div-circulos');
-  const setaEsquerda = document.getElementById('prev');
-  const setaDireita = document.getElementById('next');
+    const banners = document.querySelectorAll('.banner-carrossel');
+    const circulos = document.querySelectorAll('.div-circulos');
 
-  if (direcao === 'prev') {
-    paginaAtualCarrossel = Math.max(1, paginaAtualCarrossel - 1);
-  } else if (direcao === 'next') {
-    paginaAtualCarrossel = Math.min(totalPaginasCarrossel, paginaAtualCarrossel + 1);
-  } else if (typeof direcao === 'number') {
-    paginaAtualCarrossel = direcao;
-  }
+    if (direcao === 'prev') {
+        paginaAtualCarrossel = paginaAtualCarrossel === 1 ? totalPaginasCarrossel : paginaAtualCarrossel - 1;
+    } else if (direcao === 'next') {
+        paginaAtualCarrossel = paginaAtualCarrossel === totalPaginasCarrossel ? 1 : paginaAtualCarrossel + 1;
+    } else if (typeof direcao === 'number') {
+        paginaAtualCarrossel = direcao;
+    }
 
-  banners.forEach((banner, index) => {
-    banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
-  });
+    banners.forEach((banner, index) => {
+        banner.style.display = (index + 1 === paginaAtualCarrossel) ? 'flex' : 'none';
+    });
 
-  circulos.forEach((c, index) => {
-    c.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)';
-  });
-
-  if (paginaAtualCarrossel === 1) {
-    setaEsquerda.style.display = 'none';
-    setaDireita.style.display = 'block';
-  } else if (paginaAtualCarrossel === totalPaginasCarrossel) {
-    setaEsquerda.style.display = 'block';
-    setaDireita.style.display = 'none';
-  } else {
-    setaEsquerda.style.display = 'block';
-    setaDireita.style.display = 'block';
-  }
+    circulos.forEach((circulos, index) => {
+       circulos.style.backgroundColor = (index + 1 === paginaAtualCarrossel) ? 'var(--cor11)' : 'var(--cor6)'; 
+    });
 }
 
 window.onload = function () {
