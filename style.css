@@ -1855,15 +1855,57 @@ footer {
         gap: 55px;
     }
 
-    .btn-avaliacoes {
-        padding: 6px 12px;
-        font-size: 14px;
-
-    }
-
     .pagina-avaliacoes {
         font-size: 16px;
     }
+    
+    .btn-avaliacoes {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .btn-avaliacoes {
+        position: relative;
+        font-size: 0;
+    }
+
+    #prev-avaliacao::after {
+        content: "<";
+        font-size: 22px;
+        color: #063643;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #next-avaliacao::after {
+        content: ">";
+        font-size: 22px;
+        color: #063643;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-avaliacoes {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #E2F5FA;
+        border: 1px solid #063643;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-avaliacoes:hover {
+        background-color: #C7EBFB;
+    }
+
 }
 
 /*==== RESPONSIVIDADE - CONTATO =====*/
