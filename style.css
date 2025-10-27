@@ -9,6 +9,10 @@ body {
     border: 2px solid black;
 }
 
+.social-banner {
+    display: none;
+}
+
 /* ======== CABEÇALHO ======== */
 .cabeçalho {
     display: flex;
