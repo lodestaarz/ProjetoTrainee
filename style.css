@@ -2216,24 +2216,46 @@ footer {
         display: none !important;
     }
 
-    .banner-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #E2F5FA;
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        color: #063643;
-        text-decoration: none;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+    .banner-inferior {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 95%;
+        margin: 30px auto;
+        padding: 0;
     }
 
-    .banner-link:hover {
-        background-color: #C7EBFB;
-        transform: scale(1.03);
+    .banner-logo,.banner-social,.banner-links{
+        display: none !important;
+    }
+
+    .banner-links-mobile{
+        display: block;
+    }
+
+    .banner-links-mobile h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        color: #063643;
+    }
+
+    .banner-links-mobile ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .banner-links-mobile li {
+        margin: 4px 0;
+    }
+
+    .banner-links-mobile a {
+        color: #063643;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .banner-links-mobile a:hover {
+        text-decoration: underline;
     }
 
 }
