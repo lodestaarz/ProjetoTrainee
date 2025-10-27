@@ -140,4 +140,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-
+// MENU HAMBURGUER
+document.addEventListener('DOMContentLoaded', function() {
+    const menuHamburguer = document.getElementById('menuHamburguer');
+    const menuMobile = document.getElementById('menuMobile');
+    
+    menuHamburguer.addEventListener('click', function() {
+        this.classList.toggle('active');
+        menuMobile.classList.toggle('active');
+    });
+    
+    const menuLinks = menuMobile.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuHamburguer.classList.remove('active');
+            menuMobile.classList.remove('active');
+        });
+    });
+});
