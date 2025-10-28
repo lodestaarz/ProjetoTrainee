@@ -1775,6 +1775,7 @@ footer {
     .profissionais-lista {
        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
+        margin-right: 35px;
     }
 
     .profissional-card {
@@ -1786,7 +1787,7 @@ footer {
     }
 
     .profissional-card img.profissional-foto {
-        width: 100%;
+        width: 120%;
         height: 230px; 
         object-fit: cover; 
         border-radius: 10px;
