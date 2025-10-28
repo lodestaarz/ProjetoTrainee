@@ -2056,13 +2056,16 @@ footer {
     .avaliacoes {
         width: 95%;
         margin: 40px auto;
-        background-color: #E2F5FA;
         border-radius: 15px;
         padding: 25px 15px;
     }
 
     .avaliacoes-container {
         padding: 0;
+    }
+
+    .avaliacao-conteudo{
+        flex: 1;
     }
 
     .avaliacoes-titulo {
@@ -2085,9 +2088,11 @@ footer {
     }
 
     .avaliacao-foto {
+        align-self: flex-start;
         width: 70px;
         height: 70px;
-        margin-bottom: 10px;
+        position: absolute;
+        margin-left: 60px;
     }
 
     .avaliacao-cabecalho {
@@ -2112,13 +2117,57 @@ footer {
         gap: 55px;
     }
 
+
+
+    .pagina-avaliacoes {
+        font-size: 16px;
+    }
+
     .btn-avaliacoes {
         padding: 6px 12px;
 
     }
+    
+    .btn-avaliacoes {
+        position: relative;
+        font-size: 0;
+    }
 
-    .pagina-avaliacoes {
-        font-size: 16px;
+    #prev-avaliacao::after {
+        content: "<";
+        font-size: 22px;
+        color: #063643;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #next-avaliacao::after {
+        content: ">";
+        font-size: 22px;
+        color: #063643;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-avaliacoes {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #E2F5FA;
+        border: 1px solid #063643;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-avaliacoes:hover {
+        background-color: #C7EBFB;
     }
 }
 
