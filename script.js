@@ -42,19 +42,19 @@ const spanPagina = document.getElementById("pagina-avaliacoes");
 
 const avaliacoesPorPagina = [
   [
-    { nome: "Carlos Alberto", texto: "Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.", foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Neymar Jr", texto: "Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.", foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Josseana da Silva", texto: "Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.", foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" }
+    { nome: "Carlos Alberto", texto: "Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.", foto: "avaliacao1.png" },
+    { nome: "Neymar Jr", texto: "Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.", foto: "avaliacao2.png" },
+    { nome: "Josseana da Silva", texto: "Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.", foto: "avaliacao3.png" }
   ],
   [
-    { nome: "Mariana Lopes", texto: "Meu gato foi super bem atendido, adorei o carinho da equipe!", foto: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Rafael Costa", texto: "Ambiente limpo e atendimento rápido. Recomendo muito!", foto: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Aline Fernandes", texto: "Atendimento incrível, voltarei com certeza!", foto: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=100&h=100&fit=crop&crop=face" }
+    { nome: "Mariana Lopes", texto: "Meu gato foi super bem atendido, adorei o carinho da equipe!", foto: "avaliacao1.png" },
+    { nome: "Rafael Costa", texto: "Ambiente limpo e atendimento rápido. Recomendo muito!", foto: "avaliacao2.png" },
+    { nome: "Aline Fernandes", texto: "Atendimento incrível, voltarei com certeza!", foto: "avaliacao3.png" }
   ],
   [
-    { nome: "Pedro Henrique", texto: "Equipe excelente e atendimento super humano.", foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Juliana Mendes", texto: "Fiquei impressionada com o cuidado e atenção com meu cachorro!", foto: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&h=100&fit=crop&crop=face" },
-    { nome: "Lucas Pereira", texto: "Serviço rápido e veterinários muito atenciosos.", foto: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&h=100&fit=crop&crop=face" }
+    { nome: "Pedro Henrique", texto: "Equipe excelente e atendimento super humano.", foto: "avaliacao1.png" },
+    { nome: "Juliana Mendes", texto: "Fiquei impressionada com o cuidado e atenção com meu cachorro!", foto: "avaliacao2.png" },
+    { nome: "Lucas Pereira", texto: "Serviço rápido e veterinários muito atenciosos.", foto: "avaliacao3.png" }
   ]
 ];
 
@@ -158,3 +158,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
