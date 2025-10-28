@@ -997,7 +997,7 @@ footer {
 }
 
 /* ======== MEDIA QUERIES - RESPONSIVIDADE ======== */
-@media screen and (min-width: 480px) and (max-width: 1919px) {
+@media screen and (max-width: 1919px) {
     .cabeçalho {
         padding: 20px 200px;
     }
@@ -1011,7 +1011,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
     .cabeçalho {
         padding: 20px 150px;
     }
@@ -1043,7 +1043,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     .cabeçalho {
         padding: 20px 100px;
     }
@@ -1089,7 +1089,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .cabeçalho {
         padding: 20px 80px;
     }
@@ -1159,7 +1159,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .cabeçalho {
         padding: 20px 60px;
     }
@@ -1229,7 +1229,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .cabeçalho {
         padding: 20px 40px;
         flex-direction: column;
@@ -1335,7 +1335,7 @@ footer {
 }
 
 /* ======== MEDIA QUERIES PARA MOBILE ======== */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .cabeçalho {
         padding: 15px 20px;
         flex-wrap: wrap;
@@ -1646,7 +1646,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .iconeTexto {
         flex-direction: row;
         gap: 10px;
@@ -1752,7 +1752,7 @@ footer {
 }
 
 /* ======== PROFISSIONAIS E AVALIAÇÕES ======== */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     /* === PROFISSIONAIS === */
     .profissionais {
@@ -1941,7 +1941,7 @@ footer {
 
 /*==== RESPONSIVIDADE - CONTATO =====*/
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     /* === CONTATO (VERSÃO MOBILE) === */
     .contato {
@@ -2028,7 +2028,7 @@ footer {
 }
 
 /*==== RESPONSIVIDADE - BANNER SOCIAL =====*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .social-banner {
         display: flex;
         justify-content: center;
@@ -2059,7 +2059,7 @@ footer {
 }
 
 /*==== RESPONSIVIDADE - BANNER INFERIOR =====*/
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .banner-inferior {
         display: grid;
