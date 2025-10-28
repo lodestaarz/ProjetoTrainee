@@ -1488,11 +1488,18 @@ footer {
     }
     
     .text-container p {
-        padding-right: 0;
+        visibility: hidden;
+        position: relative;
+    }
+
+    .text-container p::before { 
+        content: "Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.";
+        visibility: visible;
+        position: absolute;
         margin-top: 15px;
+        margin-right: 40px;
         font-size: 16px;
         line-height: 1.5;
-        text-align: center;
         color: #0E3C48;
     }
     
