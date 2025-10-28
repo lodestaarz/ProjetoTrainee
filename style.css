@@ -79,7 +79,6 @@ img {
     transition: 0.3s;
 }
 
-/* Estilos quando o menu está aberto */
 .menu-hamburguer.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
 }
@@ -188,6 +187,7 @@ img {
     width: 100%;
 }
 
+/* ======== BANNER CAMPANHA DE VACINAÇÃO ======== */
 .campanha {
     display: flex;
     margin: 40px auto;
@@ -255,6 +255,7 @@ img {
     margin-top: 80px;
 }
 
+/* ======== BANNER CAMPANHA DE ADOÇÃO ======== */
 .banner-adocao-container {
     width: 65%;
     background-image: url('PataeOssoBackground.png');
@@ -331,6 +332,7 @@ img {
     z-index: 5;
 }
 
+/* ======== BANNER BANHO E TOSA ======== */
 .banner-banhoTosa-container {
     width: 65%;
     background-color: #F8F8FF;
@@ -410,6 +412,7 @@ img {
     z-index: 10;
 }
 
+/* ======== SETAS CARROSSEL ======== */
 .seta {
     position: absolute;
     top: 35%;
@@ -432,6 +435,7 @@ img {
     right: 270px;
 }
 
+/* ======== CIRCULOS CARROSSEL ======== */
 .circulos-container {
     display: flex;
     justify-content: center;
@@ -502,6 +506,7 @@ img {
 
 }
 
+/* ======== NOSSOS SERVIÇOS ======== */
 .nossos-servicos{
     height: 420px;
     width: 100%;
@@ -542,6 +547,7 @@ img {
     font-family: "Open Sans", sans-serif;
 }
 
+/* ======== NOSSOS SERVIÇOS 2 ======== */
 .servicos-inferiores{
     height: 325px;
     width: 100%;
@@ -577,6 +583,7 @@ img {
     display: none;
 }
 
+/* ======== FOOTER ======== */
 footer {
   background-color: #063643;
   color: #DAEDFF;
@@ -730,7 +737,6 @@ footer {
   line-height: 1.6;
 }
 
-/* CONTROLE DE AVALIAÇÕES */
 .avaliacoes-container {
   position: relative;
   border-radius: 15px;
@@ -774,7 +780,7 @@ footer {
   margin: 10px 0;
 }
 
-/* ======== CONTATO ======== */
+/* ======== ENTRE EM CONTATO ======== */
 
 .contato {
     background-color: #E2F5FA;
