@@ -47,7 +47,6 @@ body {
     font-size: 24px;
     text-decoration: none;
     color: rgb(6, 54, 67);
-    font-weight: bold;
     padding: 15px 0;
     transition: color 0.3s ease;
 }
@@ -60,8 +59,8 @@ body {
 }
 
 img {
-    width: 110px;
-    height: 100px;
+    width: 75px;
+    height: 70px;
 }
 
 .menu-hamburguer {
@@ -98,6 +97,7 @@ img {
     background-color: #F8F8FF;
     border-radius: 8px;
     margin: 20px auto;
+    height: 450px;
     width: 80%;
     max-width: 1200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -110,8 +110,8 @@ img {
     position: absolute;
     margin-top: 10px;
     right: 10px;
-    width: 220px; 
-    height: 220px;
+    width: 270px; 
+    height: 270px;
     pointer-events: none; 
 }
 
@@ -130,7 +130,7 @@ img {
 }
 
 .textoContent h2 {
-    font-size: 32px;
+    font-size: 28px;
     color: rgb(6, 54, 67);
     line-height: 1.3;
     margin-right: -120px;
@@ -139,22 +139,23 @@ img {
 }
 
 .textoImagem img {
-    height: 60%;
-    width: 60%;
+    position: absolute;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
-    margin-top: 220px;
-    margin-right: 75px;
+    left: 220px;
+    top: 120px;
 }
 
 .btn {
     display: inline-block;
-    padding: 30px 60px;
+    padding: 20px 40px;
     background-color: rgb(15, 99, 122);
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-left: 60px;
     font-size: 22px;
     transition: 0.3s;
@@ -187,7 +188,6 @@ img {
     width: 100%;
 }
 
-/* ======== BANNER CAMPANHA DE VACINAÇÃO ======== */
 .campanha {
     display: flex;
     margin: 40px auto;
@@ -255,14 +255,13 @@ img {
     margin-top: 80px;
 }
 
-/* ======== BANNER CAMPANHA DE ADOÇÃO ======== */
 .banner-adocao-container {
-    width: 65%;
     background-image: url('PataeOssoBackground.png');
     background-color: #063643;
     border-radius: 8px;
+    width: 65%;
+    height: 300px;
     gap: 30px;
-    padding: 40px 0;
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -273,7 +272,6 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    height: 100%;
 }
 
 .conteudo-texto {
@@ -283,11 +281,10 @@ img {
 }
 
 .conteudo-texto h1 {
-    font-size: 40px;
+    font-size: 32px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
-    
 }
 
 .conteudo-texto p {
@@ -306,6 +303,8 @@ img {
     border-radius: 4px;
     font-weight: bold;
     font-size: 20px;
+    margin-left: 40px;
+    margin-top: -10px;
     transition: 0.3s;
 }
 
@@ -317,14 +316,14 @@ img {
     position: absolute;
     top: 75px;
     right: 25%;
-    width: 180px;
+    width: 200px;
     height: auto;
     z-index: 5;
 }
 
 .gato img {
     position: absolute;
-    top: 20px;
+    top: 60px;
     right: -98px;
     width: 360px;
     height: auto;
@@ -332,7 +331,6 @@ img {
     z-index: 5;
 }
 
-/* ======== BANNER BANHO E TOSA ======== */
 .banner-banhoTosa-container {
     width: 65%;
     background-color: #F8F8FF;
@@ -412,11 +410,10 @@ img {
     z-index: 10;
 }
 
-/* ======== SETAS CARROSSEL ======== */
 .seta {
     position: absolute;
-    top: 35%;
-    font-size: 32px;
+    top: 33%;
+    font-size: 38px;
     color: #0F637A;
     cursor: pointer;
     user-select: none;
@@ -428,14 +425,13 @@ img {
 }
 
 .seta-esquerda {
-    left: 270px;
+    left: 20px;
 }
 
 .seta-direita {
-    right: 270px;
+    right: 20px;
 }
 
-/* ======== CIRCULOS CARROSSEL ======== */
 .circulos-container {
     display: flex;
     justify-content: center;
@@ -472,11 +468,11 @@ img {
 }
 
 .img-container img {
-    width: 160px;
-    height: 140px;
+    width: 120px;
+    height: 110px;
     margin-right: 20px;
-    margin-left: 315px;
-    margin-top: 30px;
+    margin-left: 330px;
+    margin-top: 50px;
 }
 
 .img-container p {
@@ -500,13 +496,12 @@ img {
 .text-container p {
     color: #0E3C48;
     font-size: 18px;
-    padding-right: 180px;
+    padding-right: 170px;
     margin-top: 40px;
     font-family: "Open Sans", sans-serif;
 
 }
 
-/* ======== NOSSOS SERVIÇOS ======== */
 .nossos-servicos{
     height: 420px;
     width: 100%;
@@ -535,19 +530,19 @@ img {
     height: 250px;
     border-radius: 12px;
     margin-left: 200px;
-    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text-container2 p {
     color: #0E3C48;
     font-size: 18px;
-    padding-right: 120px;
+    font-weight: 410;
+    padding-right: 200px;
     margin-left: -50px;
     margin-top: 40px;
     font-family: "Open Sans", sans-serif;
 }
 
-/* ======== NOSSOS SERVIÇOS 2 ======== */
 .servicos-inferiores{
     height: 325px;
     width: 100%;
@@ -567,7 +562,7 @@ img {
     color: #0E3C48;
     font-size: 18px;
     margin-left: 200px;
-    margin-top: -80px;
+    margin-top: -20px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -576,18 +571,15 @@ img {
     height: 220px;
     border-radius: 12px;
     margin-right: 200px;
-    font-family: "Poppins", sans-serif;
 }
 
 .btn-mobile-nossos-servicos {
     display: none;
 }
 
-/* ======== FOOTER ======== */
 footer {
   background-color: #063643;
   color: #DAEDFF;
-  padding: 1.5rem;
   margin-top: auto;
   width: 100%;
   display: flex;
@@ -642,7 +634,6 @@ footer {
     width: 240px;
     height: 240px;
     object-fit: cover;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
     margin: 0 auto 15px;
 }
         
@@ -780,7 +771,7 @@ footer {
   margin: 10px 0;
 }
 
-/* ======== ENTRE EM CONTATO ======== */
+/* ======== CONTATO ======== */
 
 .contato {
     background-color: #E2F5FA;
@@ -933,16 +924,19 @@ footer {
 }
 
 .banner-logo img {
-    width: 110px;
-    height: 100px;
+    width: 75px;
+    height: 70px;
     margin: 0 auto 10px auto;
 }
 
 .banner-logo h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
     color: #063643;
     font-family: "Poppins", sans-serif;
+    margin-top: -10px;
+    margin-left: -180px;
+    text-align: center;
 }
 
 .banner-links {
@@ -1355,6 +1349,9 @@ footer {
     .menu-hamburguer {
         display: flex;
         order: 2;
+        position: absolute;
+        margin-right: 400px;
+        margin-top: 10px;
     }
     
     .menu {
@@ -1394,50 +1391,48 @@ footer {
     }
 
     .banner {
+        flex-direction: column;
+        height: auto;
         width: 95%;
-        margin: 10px auto;
         padding: 20px;
     }
     
     .textoImagem {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        gap: 0;
+        gap: 20px;
+        position: static;
     }
     
     .textoContent {
-        order: 2;
+        order: 1;
         margin: 0;
     }
     
     .textoContent h2 {
         font-size: 24px;
-        margin: 20px 0 10px 0;
-        text-align: center;
+        margin: 10px 0;
         line-height: 1.4;
-        color: rgb(6, 54, 67);
+        margin-right: 0;
+        margin-left: 0;
     }
     
     .textoImagem img {
-        order: 1;
+        order: 2;
+        position: static;
         width: 80%;
         height: auto;
-        margin: 0 auto;
         object-fit: contain;
     }
     
     .btn {
-        margin: 20px auto;
+        order: 3;
+        margin: 15px auto 0 auto;
         padding: 15px 30px;
-        font-size: 16px;
+        font-size: 18px;
         display: block;
-        width: fit-content;
-        background-color: rgb(15, 99, 122);
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: 0.3s;
+        margin-bottom: 10px;
     }
     
     .imagemLinhas {
@@ -1458,12 +1453,24 @@ footer {
     }
 
     .quem-somos {
+        display: flex;
         flex-direction: column;
-        height: auto;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+        width: 100vw;
         padding: 40px 20px;
+        height: auto;
         text-align: center;
         gap: 30px;
         margin-top: 20px;
+        box-sizing: border-box;
     }
     
     .img-container {
@@ -1511,14 +1518,30 @@ footer {
         font-size: 16px;
         line-height: 1.5;
         color: #0E3C48;
+         font-family: "Open-sans", sans-serif;
     }
     
     .nossos-servicos {
+        display: flex;
         flex-direction: column;
-        height: auto;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+
+        width: 100vw;
         padding: 40px 20px;
+        height: auto;
         text-align: center;
         gap: 30px;
+        box-sizing: border-box;
+        
+        height: auto;
+        text-align: center;
         background-color: #6BB7CB;
     }
     
@@ -1564,10 +1587,12 @@ footer {
         position: absolute;
         width: 100%;
         margin-top: 15px;
+        margin-left: 20px;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
         color: #0E3C48;
+         font-family: "Open-sans", sans-serif;
     }
     .btn-mobile-nossos-servicos {
         display: block;
@@ -1594,6 +1619,7 @@ footer {
     .profissionais {
         width: 95%;
         margin: 40px auto;
+        font-family: "Poppins", sans-serif;
     }
     
     .profissionais-container {
@@ -1629,7 +1655,6 @@ footer {
         width: 100px;
         height: 100px;
         object-fit: cover;
-        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
         margin: 0 auto 10px;
         display: block;
     }
@@ -1782,6 +1807,7 @@ footer {
        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
         margin-right: 35px;
+        font-family: "Inter", sans-serif;
     }
 
     .profissional-card {
@@ -1849,6 +1875,7 @@ footer {
         font-size: 22px !important;
         text-align: center !important;
         margin: 0 0 25px 0 !important;
+        font-family: "Poppins", sans-serif !important;
     }
 
     .avaliacoes-lista {
@@ -1870,6 +1897,7 @@ footer {
         width: 100% !important;
         max-width: 350px !important;
         margin-right: 30px !important;
+        font-family: "Inter", sans-serif !important;
     }
 
     .avaliacao-foto {
@@ -1971,6 +1999,7 @@ footer {
         margin-bottom: 25px !important;
         margin-top: 5px !important;
         position: absolute !important;
+        font-family: "Poppins", sans-serif !important;
     }
 
     .contato-container {
